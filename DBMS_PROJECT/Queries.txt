@@ -1,0 +1,168 @@
+1. Find the number of employees working on each project.
+
+SQL:
+
+SELECT Project.project_name, COUNT(Employee.employee_id) AS num_employees
+FROM Project
+JOIN Works_on ON Project.project_id = Works_on.project_id AND Project.charity_id = Works_on.charity_id
+JOIN Employee ON Works_on.employee_id = Employee.employee_id
+GROUP BY Project.project_name;
+
+
+2. Find the charity that received the largest single donation.
+
+SQL:
+
+SELECT Charity.charity_name, Donation.donation_amount
+FROM Charity
+JOIN Donation ON Charity.charity_id = Donation.charity_id
+WHERE Donation.donation_amount = (SELECT MAX(donation_amount) FROM Donation);
+
+3. Find the total number of donations received in each month of 2022.
+
+SQL:
+
+SELECT EXTRACT (MONTH from donation_date ) AS month, SUM(donation_amount) AS total_donations
+FROM Donation
+WHERE EXTRACT (YEAR from donation_date ) = 2022
+GROUP BY EXTRACT( MONTH from donation_date);
+
+
+4. Find the average donation amount for each project.
+
+SQL:
+
+SELECT Project.project_name, AVG(Donation.donation_amount) AS avg_donation
+FROM Project
+JOIN Donation ON Project.project_id = Donation.project_id AND Project.charity_id = Donation.charity_id
+GROUP BY Project.project_name;
+
+
+5. Find the total amount of donations received by each charity.
+
+SQL:
+
+SELECT Charity.charity_name, SUM(Donation.donation_amount) AS total_donations
+FROM Charity
+JOIN Donation ON Charity.charity_id = Donation.charity_id
+GROUP BY Charity.charity_name;
+
+
+6. Find the charity with the highest number of donors:
+
+SQL:
+
+SELECT c.charity_id, COUNT(DISTINCT d.aadharcard_no) AS num_donors
+FROM Charity c
+JOIN Donation d ON c.charity_id = d.charity_id
+GROUP BY c.charity_id
+ORDER BY num_donors DESC
+LIMIT 1;
+
+7. Find the number of events hosted by charities in each state:
+
+SQL:
+
+  SELECT c.charity_id, l.state, COUNT(e.event_id) AS num_events
+  FROM Charity c
+  JOIN Event e ON c.charity_id = e.charity_id
+  JOIN Location l ON c.pincode = l.pincode
+  GROUP BY c.charity_id, l.state
+
+
+
+8. Find the project with the highest total donation amount:
+
+SQL:
+
+SELECT d.project_id, d.charity_id, SUM(d.donation_amount) AS total_donation
+FROM Donation d
+GROUP BY d.project_id, d.charity_id
+ORDER BY total_donation DESC
+LIMIT 1;
+
+
+9. Find the total donation amount by donors who donated through each method:
+
+SQL:
+
+SELECT d.method, SUM(d.donation_amount) AS avg_donation
+FROM Donation d
+GROUP BY d.method;
+
+
+10. Find the top 5 donors who donated the highest amount:
+
+SQL:
+
+SELECT e.aadharcard_no, e.total_donation, donor_name from donor NATURAL JOIN (SELECT d.aadharcard_no, SUM(d.donation_amount) AS total_donation
+FROM Donation d
+GROUP BY d.aadharcard_no
+) as e ORDER BY total_donation DESC
+LIMIT 5;
+
+11. Find the employee who worked on the most number of projects:
+
+SQL:
+
+SELECT w.employee_id, COUNT(*) AS num_projects
+FROM Works_on w
+GROUP BY w.employee_id
+ORDER BY num_projects DESC
+LIMIT 1;
+
+
+12. Find the total donation amount by donors in each pincode:
+
+SQL:
+
+SELECT l.pincode, SUM(d.donation_amount) AS avg_donation_amount
+FROM Donation d
+JOIN Donor on d.aadharcard_no = Donor.aadharcard_no
+JOIN Location l on Donor.pincode = l.pincode
+GROUP BY l.pincode;
+
+
+13. Find the total donation amount for each project in a charity:
+
+SQL:
+
+SELECT d.project_id, d.charity_id, SUM(d.donation_amount) AS total_donation
+FROM Donation d
+GROUP BY d.project_id, d.charity_id;
+
+
+14. List charity names that have collected the highest donation in the given year
+
+SQL:
+
+SELECT charity_id , year FROM (SELECT SUM(donation_amount) AS donation_amount,charity_id, (SELECT EXTRACT (YEAR FROM donation_date ) AS year)  
+		  FROM Donation GROUP BY charity_id,(SELECT EXTRACT (YEAR FROM donation_date ) AS year) ) 
+		  AS r1 NATURAL JOIN (SELECT MAX(donation_amount) AS donation_amount,year 
+	FROM 
+	(SELECT SUM(donation_amount) AS donation_amount,charity_id, (SELECT EXTRACT (YEAR FROM donation_date ) AS year)  
+		  FROM Donation GROUP BY charity_id,(SELECT EXTRACT (YEAR FROM donation_date ) AS year) )
+		  AS r1 GROUP BY year) AS r2;
+
+
+15.List state wise donation made to a particular charity.
+
+SQL:
+
+SELECT charity_id,SUM(donation_amount),state FROM Donation NATURAL JOIN Donor NATURAL JOIN Location GROUP BY charity_id,state; 
+
+16.List of   Charity id,project_idevent id and dates of each charity who has organige event in Gujarat in 2022.
+
+SQL:
+
+SELECT charity_id,project_id,event_id,event_date FROM event NATURAL JOIN location 
+where EXTRACT(YEAR from event_date) ='2022' AND state='Gujarat';
+
+17.Retrive  total number of Trustee working for each charity
+
+SQL:s
+
+SELECT charity_name,charity_id,number_of_trustee FROM Charity 
+NATURAL JOIN (SELECT charity_id,count(trustee_id) AS number_of_trustee FROM Charity NATURAL JOIN Trustee GROUP BY charity_id) AS r1;
+
+

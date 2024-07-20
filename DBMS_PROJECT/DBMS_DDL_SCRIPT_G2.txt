@@ -1,0 +1,161 @@
+CREATE SCHEMA DBMS_G2_Charity_Donation;
+set search_path to DBMS_G2_Charity_Donation;
+
+
+CREATE TABLE Location
+(
+             pincode VARCHAR(20)  PRIMARY KEY,
+             state VARCHAR(20) NOT NULL
+);
+
+CREATE TABLE Charity
+ (
+       charity_id VARCHAR(20) PRIMARY KEY,
+       charity_name VARCHAR(50)  NOT NULL,
+       pincode VARCHAR(20) NOT NULL ,
+       FOREIGN KEY (pincode) REFERENCES Location(pincode) ON DELETE  CASCADE ON UPDATE CASCADE
+);
+
+CREATE  TABLE  Employee 		
+(
+  	employee_id VARCHAR(20) ,
+  	charity_id VARCHAR(20),
+  	employee_name VARCHAR(20) NOT NULL,
+	PRIMARY KEY( employee_id),
+  	FOREIGN KEY (charity_id) REFERENCES Charity(charity_id)  ON DELETE  CASCADE ON UPDATE CASCADE
+
+);
+
+CREATE  TABLE  Project 
+(
+   	project_id VARCHAR(20) ,
+  	project_name VARCHAR(100) NOT NULL,
+ 	 manager_id VARCHAR(20) NOT NULL,
+  	charity_id VARCHAR(20) ,
+	PRIMARY KEY( project_id, charity_id ),
+	FOREIGN KEY (charity_id) REFERENCES Charity(charity_id)  ON DELETE  CASCADE ON UPDATE CASCADE,
+
+  	FOREIGN KEY (manager_id) REFERENCES Employee(employee_id)  ON DELETE  CASCADE ON UPDATE CASCADE
+
+);
+
+CREATE  TABLE  Donor 
+ (
+  	donor_name VARCHAR(20) NOT NULL,
+  	pincode VARCHAR(20) NOT NULL,
+  	aadharcard_no BIGINT PRIMARY KEY,
+FOREIGN KEY (pincode) REFERENCES Location(pincode)  ON DELETE  CASCADE ON UPDATE CASCADE
+
+);
+
+CREATE  TABLE  Donation
+ (
+  	aadharcard_no BIGINT ,
+  	donation_id VARCHAR(20),
+  	donation_amount BIGINT NOT NULL
+,
+  	donation_date DATE NOT NULL,
+  	project_id VARCHAR(20) ,
+  	charity_id VARCHAR(20) ,
+  	method VARCHAR(20),
+	PRIMARY KEY (donation_id, aadharcard_no,project_ID, charity_ID),
+FOREIGN KEY (aadharcard_no) REFERENCES Donor(aadharcard_no)  ON DELETE  CASCADE ON UPDATE CASCADE,
+FOREIGN KEY (project_id,charity_id) REFERENCES Project(project_id,charity_id)  ON DELETE  CASCADE ON UPDATE CASCADE
+
+  
+);
+
+
+
+CREATE  TABLE  Event
+ (
+  charity_id VARCHAR(20) ,
+  pincode VARCHAR(20) NOT NULL,
+  project_id VARCHAR(20) ,
+  event_id VARCHAR(20) ,
+  event_date DATE NOT NULL,
+     PRIMARY KEY (charity_id, project_id, event_id),
+  
+ 	 FOREIGN KEY (project_id,charity_id) REFERENCES Project(project_id,charity_id)  ON DELETE  CASCADE ON UPDATE CASCADE
+,
+ FOREIGN KEY (pincode) REFERENCES Location(pincode)  ON DELETE  CASCADE ON UPDATE CASCADE
+
+
+);
+
+
+
+CREATE  TABLE  Volunteer 
+(
+  volunteer_id VARCHAR(20) PRIMARY KEY,
+  volunteer_name VARCHAR(20) NOT NULL,
+  charity_id VARCHAR(20),
+  project_id VARCHAR(20),
+event_id VARCHAR(20),
+ FOREIGN KEY (charity_id,project_id,event_id) REFERENCES Event(charity_id,project_id,event_id)  ON DELETE  CASCADE ON UPDATE CASCADE
+
+  
+);
+
+
+CREATE  TABLE  Trustee 
+ (
+  trustee_name VARCHAR(20) NOT NULL,
+  trustee_id VARCHAR(20) ,
+  charity_id VARCHAR(20) ,
+  PRIMARY KEY(trustee_id, charity_id),
+  FOREIGN KEY (charity_id) REFERENCES Charity(charity_id)  ON DELETE  CASCADE ON UPDATE CASCADE
+
+);
+
+
+CREATE  TABLE  Works_on 
+(
+  project_id VARCHAR(20) ,
+  charity_id VARCHAR(20)  ,
+  employee_id VARCHAR(20)  ,
+  PRIMARY KEY(project_id, charity_id, employee_id  ),
+  FOREIGN KEY (project_id,charity_id) REFERENCES Project(project_id,charity_id)  ON DELETE  CASCADE ON UPDATE CASCADE,
+  FOREIGN KEY (employee_id) REFERENCES Employee(employee_id)  ON DELETE  CASCADE ON UPDATE CASCADE
+
+);
+
+CREATE   TABLE   Donor_email
+ (
+  aadharcard_no BIGINT ,
+  email VARCHAR(30) ,
+  PRIMARY KEY( aadharcard_no, email),
+  FOREIGN KEY (aadharcard_no) REFERENCES Donor(aadharcard_no)  ON DELETE  CASCADE ON UPDATE CASCADE
+
+);
+
+
+ 
+CREATE   TABLE   Charity_contact 
+(
+  charity_id VARCHAR(20) ,
+  contact_no BIGINT,
+PRIMARY KEY (charity_id,contact_no),
+  FOREIGN KEY (charity_id) REFERENCES Charity(charity_id)  ON DELETE  CASCADE ON UPDATE CASCADE
+
+);
+
+CREATE   TABLE  Donor_contact 
+(
+  aadharcard_no BIGINT ,
+  Mobile_No BIGINT,
+PRIMARY KEY (aadharcard_no,mobile_no),
+
+  FOREIGN KEY (aadharcard_no) REFERENCES Donor(aadharcard_no)  ON DELETE  CASCADE ON UPDATE CASCADE
+
+);
+
+CREATE  TABLE  Employee_contact  
+(
+  employee_id VARCHAR(20) ,
+  employee_mobile_no BIGINT,
+  PRIMARY KEY (employee_id,employee_mobile_no),
+  FOREIGN KEY (employee_id) REFERENCES    Employee(employee_id)  ON DELETE  CASCADE ON UPDATE CASCADE
+
+  
+);

@@ -1,0 +1,1589 @@
+--Location
+INSERT INTO Location (pincode, state) VALUES
+    ('380001', 'Gujarat'),
+    ('380002', 'Gujarat'),
+    ('380003', 'Gujarat'),
+    ('380004', 'Gujarat'),
+    ('380005', 'Gujarat'),
+    ('380006', 'Gujarat'),
+    ('380007', 'Gujarat'),
+    ('380008', 'Gujarat'),
+    ('380009', 'Gujarat'),
+    ('380010', 'Gujarat'),
+    ('400001', 'Maharashtra'),
+    ('400002', 'Maharashtra'),
+    ('400003', 'Maharashtra'),
+    ('400004', 'Maharashtra'),
+    ('400005', 'Maharashtra'),
+    ('400006', 'Maharashtra'),
+    ('400007', 'Maharashtra'),
+    ('400008', 'Maharashtra'),
+    ('400009', 'Maharashtra'),
+    ('400010', 'Maharashtra'),
+    ('110001', 'Delhi'),
+    ('110002', 'Delhi'),
+    ('110003', 'Delhi'),
+    ('110004', 'Delhi'),
+    ('110005', 'Delhi'),
+    ('110006', 'Delhi'),
+    ('110007', 'Delhi'),
+    ('110008', 'Delhi'),
+    ('110009', 'Delhi'),
+    ('110010', 'Delhi'),
+    ('700001', 'West Bengal'),
+    ('700002', 'West Bengal'),
+    ('700003', 'West Bengal'),
+    ('700004', 'West Bengal'),
+    ('700005', 'West Bengal'),
+    ('700006', 'West Bengal'),
+    ('700007', 'West Bengal'),
+    ('700008', 'West Bengal'),
+    ('700009', 'West Bengal'),
+    ('700010', 'West Bengal'),
+    ('302001', 'Rajasthan'),
+    ('302002', 'Rajasthan'),
+    ('302003', 'Rajasthan'),
+    ('302004', 'Rajasthan'),
+    ('302005', 'Rajasthan'),
+    ('302006', 'Rajasthan'),
+    ('302007', 'Rajasthan'),
+    ('302008', 'Rajasthan'),
+    ('302009', 'Rajasthan'),
+    ('302010', 'Rajasthan');
+
+--Charity
+INSERT INTO Charity (charity_id, charity_name, pincode) VALUES 
+('CGJ001', 'Sewa Samiti', '380001'),
+('CGJ002', 'Kshamata Trust', '380005'),
+('CGJ003', 'Asha Foundation', '380009'),
+('CMH001', 'Aarohan NGO', '400001'),
+('CMH002', 'Maitri Foundation', '400005'),
+('CMH003', 'Nirbhay Kadam', '400009'),
+('CDL001', 'Roshni Trust', '110001'),
+('CDL002', 'Hope Foundation', '110005'),
+('CDL003', 'Shanti Sewa', '110010'),
+('CWB001', 'Sabuj Sangha', '700001'),
+('CWB002', 'Prayasam', '700005'),
+('CWB003', 'Sampurna', '700010'),
+('CRA001', 'Aasra Foundation', '302001'),
+('CRA002', 'Udaan NGO', '302005'),
+('CRA003', 'Sahara Trust', '302009');
+
+--Employee
+INSERT INTO Employee (employee_id, charity_id, employee_name) VALUES
+('CGJ001E001', 'CGJ001', 'Amit Patel'),
+('CGJ001E002', 'CGJ001', 'Kavita Shah'),
+('CGJ001E003', 'CGJ001', 'Rahul Singh'),
+('CGJ001E004', 'CGJ001', 'Preeti Mehta'),
+('CGJ001E005', 'CGJ001', 'Rajesh Sharma'),
+('CGJ001E006', 'CGJ001', 'Anjali Desai'),
+('CGJ001E007', 'CGJ001', 'Vikram Singh'),
+('CGJ001E008', 'CGJ001', 'Radha Gupta'),
+('CGJ001E009', 'CGJ001', 'Hemant Patel'),
+('CGJ001E010', 'CGJ001', 'Monika Patel'),
+('CGJ002E001', 'CGJ002', 'Riya Shah'),
+('CGJ002E002', 'CGJ002', 'Shweta Gupta'),
+('CGJ002E003', 'CGJ002', 'Jatin Mehta'),
+('CGJ002E004', 'CGJ002', 'Varun Patel'),
+('CGJ002E005', 'CGJ002', 'Kunal Sharma'),
+('CGJ002E006', 'CGJ002', 'Mansi Shah'),
+('CGJ002E007', 'CGJ002', 'Rahul Thakur'),
+('CGJ002E008', 'CGJ002', 'Shikha Patel'),
+('CGJ002E009', 'CGJ002', 'Neha Singh'),
+('CGJ002E010', 'CGJ002', 'Anil Sharma'),
+('CGJ003E001', 'CGJ003', 'Smit Patel'),
+('CGJ003E002', 'CGJ003', 'Shrey Gupta'),
+('CGJ003E003', 'CGJ003', 'Jeel Mehta'),
+('CGJ003E004', 'CGJ003', 'Vairaj Patel'),
+('CGJ003E005', 'CGJ003', 'Jay Sharma'),
+('CGJ003E006', 'CGJ003', 'Mani Shah'),
+('CGJ003E007', 'CGJ003', 'Rakul Thakur'),
+('CGJ003E008', 'CGJ003', 'Sneha Patel'),
+('CGJ003E009', 'CGJ003', 'megha Singh'),
+('CGJ003E010', 'CGJ003', 'Aakash Sharma'),
+('MH001E01', 'CMH001', 'Arun Kumar'),
+('MH001E02', 'CMH001', 'Divya Singh'),
+('MH001E03', 'CMH001', 'Gaurav Sharma'),
+('MH001E04', 'CMH001', 'Priya Patel'),
+('MH001E05', 'CMH001', 'Rajesh Singh'),
+('MH001E06', 'CMH001', 'Shweta Gupta'),
+('MH001E07', 'CMH001', 'Vikram Kumar'),
+('MH001E08', 'CMH001', 'Varun Sharma'),
+('MH001E09', 'CMH001', 'Neha Singh'),
+('MH001E10', 'CMH001', 'Kirti Patel'),
+('MH002E01', 'CMH002', 'Aditi Singh'),
+('MH002E02', 'CMH002', 'Aman Gupta'),
+('MH002E03', 'CMH002', 'Anjali Patel'),
+('MH002E04', 'CMH002', 'Divya Sharma'),
+('MH002E05', 'CMH002', 'Karan Singh'),
+('MH002E06', 'CMH002', 'Mansi Patel'),
+('MH002E07', 'CMH002', 'Pooja Gupta'),
+('MH002E08', 'CMH002', 'Rohit Kumar'),
+('MH002E09', 'CMH002', 'Sandeep Sharma'),
+('MH002E10', 'CMH002', 'Sneha Patel'),
+('MH003E01', 'CMH003', 'Akash Singh'),
+('MH003E02', 'CMH003', 'Ankit Sharma'),
+('MH003E03', 'CMH003', 'Divya Patel'),
+('MH003E04', 'CMH003', 'Isha Gupta'),
+('MH003E05', 'CMH003', 'Karan Singh'),
+('MH003E06', 'CMH003', 'Manish Patel'),
+('MH003E07', 'CMH003', 'Pragya Sharma'),
+('MH003E08', 'CMH003', 'Rahul Kumar'),
+('MH003E09', 'CMH003', 'Shivani Singh'),
+('MH003E10', 'CMH003', 'Swati Patel'),
+('DL001E01', 'CDL001', 'Akanksha Sharma'),
+('DL001E02', 'CDL001', 'Anjali Singh'),
+('DL001E03', 'CDL001', 'Divya Gupta'),
+('DL001E04', 'CDL001', 'Ishita Patel'),
+('DL001E05', 'CDL001', 'Kunal Singh'),
+('DL001E06', 'CDL001', 'Manisha Patel'),
+('DL001E07', 'CDL001', 'Prachi Sharma'),
+('DL001E08', 'CDL001', 'Raj Kumar'),
+('DL001E09', 'CDL001', 'Shivangi Singh'),
+('DL001E10', 'CDL001', 'Swati Gupta');
+INSERT INTO Employee (employee_id, charity_id, employee_name) VALUES
+('HFC00201', 'CDL002', 'Amit Sharma'),
+('HFC00202', 'CDL002', 'Neha Singh'),
+('HFC00203', 'CDL002', 'Rajesh Gupta'),
+('HFC00204', 'CDL002', 'Priya Yadav'),
+('HFC00205', 'CDL002', 'Ravi Verma'),
+('HFC00206', 'CDL002', 'Sneha Jha'),
+('HFC00207', 'CDL002', 'Ajay Kumar'),
+('HFC00208', 'CDL002', 'Reena Singh'),
+('HFC00209', 'CDL002', 'Alok Patel'),
+('HFC00210', 'CDL002', 'Anjali Dubey');
+INSERT INTO Employee (employee_id, charity_id, employee_name) VALUES
+('SSC00301', 'CDL003', 'Sudhir Kumar'),
+('SSC00302', 'CDL003', 'Vidya Singh'),
+('SSC00303', 'CDL003', 'Sanjeev Gupta'),
+('SSC00304', 'CDL003', 'Poonam Singh'),
+('SSC00305', 'CDL003', 'Rajeshwar Verma'),
+('SSC00306', 'CDL003', 'Anita Jha'),
+('SSC00307', 'CDL003', 'Vikas Kumar'),
+('SSC00308', 'CDL003', 'Geeta Singh'),
+('SSC00309', 'CDL003', 'Anuj Patel'),
+('SSC00310', 'CDL003', 'Suman Dubey');
+INSERT INTO Employee (employee_id, charity_id, employee_name) VALUES
+('SSCWB00101', 'CWB001', 'Sukumar Das'),
+('SSCWB00102', 'CWB001', 'Soma Roy'),
+('SSCWB00103', 'CWB001', 'Debasish Banerjee'),
+('SSCWB00104', 'CWB001', 'Ratna Ghosh'),
+('SSCWB00105', 'CWB001', 'Alok Mukherjee'),
+('SSCWB00106', 'CWB001', 'Indrani Sengupta'),
+('SSCWB00107', 'CWB001', 'Rajib Chowdhury'),
+('SSCWB00108', 'CWB001', 'Tina Sen'),
+('SSCWB00109', 'CWB001', 'Sayan Mukherjee'),
+('SSCWB00110', 'CWB001', 'Suman Dey');
+INSERT INTO Employee (employee_id, charity_id, employee_name) VALUES 
+('PR001', 'CWB002', 'Riya Chatterjee'),
+('PR002', 'CWB002', 'Sourav Dey'),
+('PR003', 'CWB002', 'Ananya Chakraborty'),
+('PR004', 'CWB002', 'Debajyoti Basu'),
+('PR005', 'CWB002', 'Shruti Sharma'),
+('PR006', 'CWB002', 'Argha Chatterjee'),
+('PR007', 'CWB002', 'Rahul Gupta'),
+('PR008', 'CWB002', 'Poulami Das'),
+('PR009', 'CWB002', 'Abhinav Sarkar'),
+('PR010', 'CWB002', 'Jasmine Khan');
+INSERT INTO Employee (employee_id, charity_id, employee_name) VALUES 
+('SP001', 'CWB003', 'Suman Das'),
+('SP002', 'CWB003', 'Sudipta Datta'),
+('SP003', 'CWB003', 'Rajdeep Dasgupta'),
+('SP004', 'CWB003', 'Anindya Saha'),
+('SP005', 'CWB003', 'Priya Basu'),
+('SP006', 'CWB003', 'Rituparna Ghosh'),
+('SP007', 'CWB003', 'Abhishek Bose'),
+('SP008', 'CWB003', 'Ishita Das'),
+('SP009', 'CWB003', 'Soumyadip Mukherjee'),
+('SP010', 'CWB003', 'Sudipto Chatterjee');
+INSERT INTO Employee (employee_id, charity_id, employee_name) VALUES 
+('AS001', 'CRA001', 'Kriti Gupta'),
+('AS002', 'CRA001', 'Ankit Singh'),
+('AS003', 'CRA001', 'Amita Sharma'),
+('AS004', 'CRA001', 'Manish Gupta'),
+('AS005', 'CRA001', 'Sangeeta Yadav'),
+('AS006', 'CRA001', 'Vikas Kumar'),
+('AS007', 'CRA001', 'Rashmi Singh'),
+('AS008', 'CRA001', 'Sachin Sharma'),
+('AS009', 'CRA001', 'Anamika Singh'),
+('AS010', 'CRA001', 'Rohit Jain');
+INSERT INTO Employee (employee_id, charity_id, employee_name) VALUES 
+('UD001', 'CRA002', 'Anjali Sharma'),
+('UD002', 'CRA002', 'Ravi Singh'),
+('UD003', 'CRA002', 'Aditi Sinha'),
+('UD004', 'CRA002', 'Anand Gupta'),
+('UD005', 'CRA002', 'Akash Verma'),
+('UD006', 'CRA002', 'Priya Singh'),
+('UD007', 'CRA002', 'Manoj Kumar'),
+('UD008', 'CRA002', 'Nidhi Yadav'),
+('UD009', 'CRA002', 'Ashish Singh'),
+('UD010', 'CRA002', 'Surbhi Sharma');
+INSERT INTO Employee (employee_id, charity_id, employee_name) VALUES 
+('CRA003E001', 'CRA003', 'Rahul Sharma'),
+('CRA003E002', 'CRA003', 'Priya Singh'),
+('CRA003E003', 'CRA003', 'Alok Gupta'),
+('CRA003E004', 'CRA003', 'Ritu Patel'),
+('CRA003E005', 'CRA003', 'Suresh Menon'),
+('CRA003E006', 'CRA003', 'Anjali Saxena'),
+('CRA003E007', 'CRA003', 'Kiran Desai'),
+('CRA003E008', 'CRA003', 'Amita Pandey'),
+('CRA003E009', 'CRA003', 'Rohit Shah'),
+('CRA003E010', 'CRA003', 'Deepak Singh');
+
+
+
+
+
+--Donor
+
+
+INSERT INTO Donor (donor_name, pincode, aadharcard_no) VALUES
+    ('Rahul', '380001', 123456789012),
+    ('Sneha', '380002', 234567890123),
+    ('Nikhil', '380003', 345678901234),
+    ('Komal', '380004', 456789012345),
+    ('Vishal', '380005', 567890123456),
+    ('Preeti', '380006', 678901234567),
+    ('Mayank', '380007', 789012345678),
+    ('Swati', '380008', 890123456789),
+    ('Ravi', '380009', 901234567890),
+    ('Amit', '380010', 112345678901);
+
+
+INSERT INTO Donor (donor_name, pincode, aadharcard_no) VALUES
+    ('Shruti', '400001', 223456789012),
+    ('Ankit', '400002', 334567890123),
+    ('Parth', '400003', 445678901234),
+    ('Kavya', '400004', 556789012345),
+    ('Yash', '400005', 667890123456),
+    ('Dhruv', '400006', 778901234567),
+    ('Neha', '400007', 889012345678),
+    ('Riya', '400008', 990123456789),
+    ('Kunal', '400009', 111111111188),
+    ('Aditya', '400010', 222222222212);
+
+INSERT INTO Donor (donor_name, pincode, aadharcard_no) VALUES
+    ('Saurabh', '110001', 333337890123),
+    ('Prachi', '110002', 333338901234),
+    ('Arjun', '110003', 333339012345),
+    ('Amit', '110004', 333330123456),
+    ('Raj', '110005', 333331234567),
+    ('Suman', '110006', 333332345678),
+    ('Kapil', '110007', 333333456789),
+    ('Varun', '110008', 333335678901),
+    ('Aryan', '110009', 333336789012),
+    ('Manisha', '110010', 333337800123);
+
+
+INSERT INTO Donor (donor_name, pincode, aadharcard_no) VALUES
+    ('Priyanka', '700001', 445678904444),
+    ('Abhishek', '700002', 556789014444),
+    ('Shivani', '700003', 667890124444),
+    ('Aakash', '700004', 778901234444),
+    ('Ankita', '700005', 889012344444),
+    ('Rahul', '700006', 990123454444),
+    ('Pooja', '700007', 112345674444),
+    ('Aditi', '700008', 223456784444),
+    ('Anjali', '700009', 334567894444),
+    ('Harsh', '700010', 445678444444);
+
+INSERT INTO Donor (donor_name, pincode, aadharcard_no) VALUES
+   
+    ('Anil Joshi', '302003', 88292012001),
+    ('Shreya Parekh', '302001', 882920120002),
+    ('Vivek Gupta', '302009', 882920345003),
+    ('Neha Verma', '302008', 882920456004),
+    ('Rohit Singh', '302010', 882920567005),
+    ('Arun Patel', '302005', 882920890006),
+    ('Pooja Sharma', '302002', 99292880007),
+    ('Ankit Gupta', '302006', 882920901008),
+    ('Sanjay Singh', '302004', 882920012009),
+    ('Riya Mehta', '302007', 88292023010),
+    ('Amita Joshi', '302003', 88292034011),
+    ('Rahul Parekh', '302001', 882920345012),
+    ('Sachin Gupta', '302009', 882920456013),
+    ('Nidhi Verma', '302008', 882920567014),
+    ('Saurabh Singh', '302010', 882920789015);
+   
+
+
+
+
+
+--Charity_contact
+
+
+INSERT INTO Charity_contact (charity_id, contact_no) VALUES 
+('CGJ001', 7925890214),
+('CGJ001', 7925890215),
+('CGJ002', 7925890216),
+('CGJ002', 7925890217),
+('CGJ002', 7925890218),
+('CGJ003', 7925890219),
+('CGJ003', 7925890220),
+('CMH001', 2265890214),
+('CMH001', 2265890215),
+('CMH002', 2265890216),
+('CMH002', 2265890217),
+('CMH002', 2265890218),
+('CMH003', 2265890219),
+('CMH003', 2265890220),
+('CDL001', 1125890214),
+('CDL001', 1125890215),
+('CDL002', 1125890216),
+('CDL002', 1125890217),
+('CDL003', 1125890218),
+('CWB001', 3325890219),
+('CWB001', 3325890220),
+('CWB002', 3325890214),
+('CWB002', 3325890215),
+('CWB002', 3325890216),
+('CWB003', 3325890217),
+('CWB003', 3325890218),
+('CRA001', 1415890219),
+('CRA002', 1415890220),
+('CRA002', 1415890214),
+('CRA003', 1415890215),
+('CRA003', 1415890216);
+
+
+
+-- Trustee
+INSERT INTO Trustee (trustee_name, trustee_id, charity_id)
+VALUES ('Aarav Patel', 'CGJ001T01', 'CGJ001'),
+       ('Neha Shah', 'CGJ001T02', 'CGJ001');
+
+INSERT INTO Trustee (trustee_name, trustee_id, charity_id)
+VALUES ('Ananya Singh', 'CGJ002T01', 'CGJ002'),
+       ('Amit Choudhary', 'CGJ002T02', 'CGJ002'),
+       ('Rajeev Kumar', 'CGJ002T03', 'CGJ002');
+
+
+INSERT INTO Trustee (trustee_name, trustee_id, charity_id)
+VALUES ('Kavya Gupta', 'CGJ003T01', 'CGJ003'),
+       ('Ishaan Joshi', 'CGJ003T02', 'CGJ003'),
+       ('Sneha Desai', 'CGJ003T03', 'CGJ003');
+
+
+INSERT INTO Trustee (trustee_name, trustee_id, charity_id)
+VALUES ('Shreya Singh', 'CMH001T01', 'CMH001');
+
+
+INSERT INTO Trustee (trustee_name, trustee_id, charity_id)
+VALUES ('Rohan Shah', 'CMH002T01', 'CMH002'),
+       ('Pooja Mehta', 'CMH002T02', 'CMH002');
+
+
+INSERT INTO Trustee (trustee_name, trustee_id, charity_id)
+VALUES ('Nehal Singh', 'CMH003T01', 'CMH003'),
+       ('Arjun Desai', 'CMH003T02', 'CMH003'),
+       ('Divya Patel', 'CMH003T03', 'CMH003');
+
+
+INSERT INTO Trustee (trustee_name, trustee_id, charity_id)
+VALUES ('Aarav Singh', 'CDL001T01', 'CDL001');
+
+
+INSERT INTO Trustee (trustee_name, trustee_id, charity_id)
+VALUES ('Anjali Desai', 'CDL002T01', 'CDL002'),
+       ('Raj Gupta', 'CDL002T02', 'CDL002');
+
+
+INSERT INTO Trustee (trustee_name, trustee_id, charity_id)
+VALUES ('Sneha Patel', 'CDL003T01', 'CDL003'),
+       ('Karan Mehta', 'CDL003T02', 'CDL003'),
+       ('Priya Sharma', 'CDL003T03', 'CDL003');
+
+
+INSERT INTO Trustee (trustee_name, trustee_id, charity_id)
+VALUES ('Amit Singh', 'CWB001T01', 'CWB001'),
+       ('Aarti Patel', 'CWB001T02', 'CWB001');
+
+
+INSERT INTO Trustee (trustee_name, trustee_id, charity_id)
+VALUES ('Akash Gupta', 'CWB002T01', 'CWB002'),
+       ('Priyanka Shah', 'CWB002T02', 'CWB002'),
+       ('Rishi Mehta', 'CWB002T03', 'CWB002');
+
+
+INSERT INTO Trustee (trustee_name, trustee_id, charity_id)
+VALUES ('Aditi Singh', 'CWB003T01','CWB003');
+
+
+
+INSERT INTO Trustee (trustee_name, trustee_id, charity_id)
+VALUES ('Suresh Menon', 'CRA001T01', 'CRA001'),
+       ('Divya Sharma', 'CRA001T02', 'CRA001'),
+       ('Kartik Patel', 'CRA001T03', 'CRA001');
+
+
+INSERT INTO Trustee (trustee_name, trustee_id, charity_id)
+VALUES ('Nikita Desai', 'CRA002T01', 'CRA002'),
+       ('Vishal Singh', 'CRA002T02', 'CRA002');
+
+
+INSERT INTO Trustee (trustee_name, trustee_id, charity_id) VALUES 
+       ('Rajesh Singh', 'CRA003T01', 'CRA003'),
+       ('Radha Gupta', 'CRA003T03', 'CRA003');
+
+
+--Employee_contact
+
+INSERT INTO Employee_contact (employee_id, employee_mobile_no) VALUES
+('CGJ001E001', 988880001),
+('CGJ001E002', 988880003),
+('CGJ001E002', 988880004),
+('CGJ001E003', 988880005),
+('CGJ001E003', 988880006),
+('CGJ001E004', 988880007),
+('CGJ001E004', 988880008),
+('CGJ001E005', 988880009),
+('CGJ001E006', 988880011),
+('CGJ001E006', 988880012),
+('CGJ001E007', 988880013),
+('CGJ001E007', 988880014),
+('CGJ001E008', 988880016),
+('CGJ001E009', 988880017),
+('CGJ001E010', 988880019),
+('CGJ001E010', 988880020);
+
+
+INSERT INTO Employee_contact (employee_id, employee_mobile_no) VALUES
+('CGJ002E001', 9777700011),
+('CGJ002E002', 9777700012),
+('CGJ002E003', 9777700013),
+('CGJ002E004', 9777700014),
+('CGJ002E005', 9777700015),
+('CGJ002E006', 9777700016),
+('CGJ002E007', 9777700017),
+('CGJ002E008', 9777700018),
+('CGJ002E009', 9777700019),
+('CGJ002E010', 9777700020),
+('MH001E01', 9777700021),
+('MH001E02', 9777700022),
+('MH001E03', 9777700023),
+('MH001E04', 9777700024),
+('MH001E05', 9777700025),
+('MH001E06', 9777700026),
+('MH001E07', 9777700027),
+('MH001E08', 9777700028),
+('MH001E09', 9777700029),
+('MH001E10', 9777700030),
+('MH002E01', 9777700031),
+('MH002E02', 9777700032),
+('MH002E03', 9777700033),
+('MH002E04', 9777700034),
+('MH002E05', 9777700035),
+('MH002E06', 9777700036),
+('MH002E07', 9777700037),
+('MH002E08', 9777700038),
+('MH002E09', 9777700039),
+('MH002E10', 9777700040);
+
+INSERT INTO Employee_contact (employee_id, employee_mobile_no) VALUES
+('MH003E01', 9666600011),
+('MH003E01', 9666600022),
+('MH003E02', 9666600033),
+('MH003E02', 9666600044),
+('MH003E03', 9666600055),
+('MH003E03', 9666600066),
+('MH003E04', 9666600077),
+('MH003E04', 9666600088),
+('MH003E05', 9666600099),
+('MH003E05', 9666600100),
+('MH003E06', 9666600111),
+('MH003E06', 9666600122),
+('MH003E07', 9666600133),
+('MH003E07', 9666600144),
+('MH003E08', 9666600155),
+('MH003E08', 9666600166),
+('MH003E09', 9666600177),
+('MH003E09', 9666600188),
+('MH003E10', 9666600199),
+('MH003E10', 9666600200),
+('DL001E01', 9666600211),
+('DL001E01', 9666600222),
+('DL001E02', 9666600233),
+('DL001E02', 9666600244),
+('DL001E03', 9666600255),
+('DL001E03', 9666600266),
+('DL001E04', 9666600277),
+('DL001E04', 9666600288),
+('DL001E05', 9666600299),
+('DL001E05', 9666600300),
+('DL001E06', 9666600311),
+('DL001E06', 9666600322),
+('DL001E07', 9666600333),
+('DL001E07', 9666600344),
+('DL001E08', 9666600355),
+('DL001E08', 9666600366),
+('DL001E09', 9666600377),
+('DL001E09', 9666600388),
+('DL001E10', 9666600399),
+('DL001E10', 9666600400),
+('HFC00201', 9666600411),
+('HFC00201', 9666600422),
+('HFC00202', 9666600433),
+('HFC00202', 9666600444),
+('HFC00203', 9666600455),
+('HFC00203', 9666600466),
+('HFC00204', 9666600477),
+('HFC00204', 9666600488),
+('HFC00205', 9666600499),
+('HFC00205', 9666600500),
+('HFC00206', 9666600511),
+('HFC00206', 9666600522),
+('HFC00207', 9666600533),
+('HFC00207', 9666600544),
+('HFC00208', 9666600555),
+('HFC00208', 9666600566),
+('HFC00209', 9666600577),
+('HFC00209', 9666600588),
+('HFC00210', 9666600599),
+('HFC00210', 9666600600);
+
+
+INSERT INTO Employee_contact (employee_id, employee_mobile_no) VALUES
+('SSC00301', 955550001),
+('SSC00301', 955550002),
+('SSC00302', 955550003),
+('SSC00302', 955550004),
+('SSC00303', 955550005),
+('SSC00303', 955550006),
+('SSC00304', 955550007),
+('SSC00304', 955550008),
+('SSC00305', 955550009),
+('SSC00305', 955550010),
+('SSC00306', 955550011),
+('SSC00306', 955550012),
+('SSC00307', 955550013),
+('SSC00307', 955550014),
+('SSC00308', 955550015),
+('SSC00308', 955550016),
+('SSC00309', 955550017),
+('SSC00309', 955550018),
+('SSC00310', 955550019),
+('SSC00310', 955550020),
+('SSCWB00101', 955500001),
+('SSCWB00101', 955500002),
+('SSCWB00102', 955500003),
+('SSCWB00102', 955500004),
+('SSCWB00103', 955500005),
+('SSCWB00103', 955500006),
+('SSCWB00104', 955580007),
+('SSCWB00104', 955580008),
+('SSCWB00105', 955580009),
+('SSCWB00105', 955580010),
+('SSCWB00106', 955580011),
+('SSCWB00106', 955580012),
+('SSCWB00107', 955580013),
+('SSCWB00107', 955580014),
+('SSCWB00108', 955580015),
+('SSCWB00108', 955580016),
+('SSCWB00109', 955580017),
+('SSCWB00109', 955580018),
+('SSCWB00110', 955580019),
+('SSCWB00110', 95580020),
+('PR001', 955550021),
+('PR001', 955550022),
+('PR002', 955550023),
+('PR002', 955550024),
+('PR003', 955550025),
+('PR003', 955550026),
+('PR004', 955550027),
+('PR004', 955550028),
+('PR005', 955550029),
+('PR005', 955550030),
+('PR006', 955550031),
+('PR006', 955550032),
+('PR007', 955550033),
+('PR007', 955550034),
+('PR008', 955550035),
+('PR008', 955550036),
+('PR009', 955550037),
+('PR009', 955550038),
+('PR010', 955550039),
+('PR010', 955550040),
+('SP001', 988880021),
+('SP001', 988880022),
+('SP002', 988880023),
+('SP002', 988880024),
+('SP003', 988880025),
+('SP003', 988880026),
+('SP004', 988880027),
+('SP004', 988880028),
+('SP005', 988880029),
+('SP005', 988880030),
+('SP006', 988880031),
+('SP006', 988880032),
+('SP007', 988880033),
+('SP008', 988880034),
+('SP009', 988880035),
+('SP010', 988880036);
+
+INSERT INTO Employee_contact (employee_id, employee_mobile_no) VALUES 
+('AS001', 944440001),
+('AS002', 944440002),
+('AS003', 944440003),
+('AS004', 944440004),
+('AS005', 944440005),
+('AS006', 944440006),
+('AS007', 944440007),
+('AS008', 944440008),
+('AS009', 944440009),
+('AS010', 944440010),
+('UD001', 944440011),
+('UD002', 944440012),
+('UD003', 944440013),
+('UD004', 944440014),
+('UD005', 944440015),
+('UD006', 944440016),
+('UD007', 944440017),
+('UD008', 944440018),
+('UD009', 944440019),
+('UD010', 944440020),
+('CRA003E001', 944440021),
+('CRA003E002', 944440022),
+('CRA003E003', 944440023),
+('CRA003E004', 944440024),
+('CRA003E005', 944440025),
+('CRA003E006', 944440026),
+('CRA003E007', 944440027),
+('CRA003E008', 944440028),
+('CRA003E009', 944440029),
+('CRA003E010', 944440030);
+
+
+--Project
+INSERT INTO Project (project_id, project_name, manager_id, charity_id)
+VALUES
+  ('CGJ001P001', 'Education Program', 'CGJ001E001', 'CGJ001'),
+  ('CGJ001P002', 'Healthcare Program', 'CGJ001E002', 'CGJ001'),
+  ('CGJ001P003', 'Women Empowerment Program', 'CGJ001E003', 'CGJ001'),
+  ('CGJ001P004', 'Environment Conservation Program', 'CGJ001E004', 'CGJ001'),
+  ('CGJ001P005', 'Disaster Relief Program', 'CGJ001E005', 'CGJ001'),
+  ('CGJ002P001', 'Rural Development Program', 'CGJ002E001', 'CGJ002'),
+  ('CGJ002P002', 'Child Welfare Program', 'CGJ002E002', 'CGJ002'),
+  ('CGJ002P003', 'Livelihood Program', 'CGJ002E003', 'CGJ002'),
+  ('CGJ002P004', 'Community Development Program', 'CGJ002E004', 'CGJ002'),
+  ('CGJ002P005', 'Human Rights Program', 'CGJ002E005', 'CGJ002'),
+  ('CGJ003P001', 'Education Program', 'CGJ003E001', 'CGJ003'),
+  ('CGJ003P002', 'Healthcare Program', 'CGJ003E002', 'CGJ003'),
+  ('CGJ003P003', 'Women Empowerment Program', 'CGJ003E003', 'CGJ003'),
+  ('CGJ003P004', 'Environment Conservation Program', 'CGJ003E004', 'CGJ003'),
+  ('CGJ003P005', 'Disaster Relief Program', 'CGJ003E005', 'CGJ003');
+
+INSERT INTO Project (project_id, project_name, manager_id, charity_id)
+VALUES 
+('CMH001P001', 'Sahyadri Education Project', 'MH001E01', 'CMH001'),
+('CMH001P002', 'Kaveri Health Initiative', 'MH001E02', 'CMH001'),
+('CMH001P003', 'Ganga Women Empowerment', 'MH001E03', 'CMH001'),
+('CMH001P004', 'Yamuna Environmental Project', 'MH001E04', 'CMH001'),
+('CMH001P005', 'Narmada Sustainable Agriculture', 'MH001E05', 'CMH001'),
+('CMH002P001', 'Rajasthan Healthcare Initiative', 'MH002E01', 'CMH002'),
+('CMH002P002', 'Himachal Pradesh Education Project', 'MH002E02', 'CMH002'),
+('CMH002P003', 'Bihar Women Empowerment', 'MH002E03', 'CMH002'),
+('CMH002P004', 'Uttar Pradesh Environmental Project', 'MH002E04', 'CMH002'),
+('CMH002P005', 'Madhya Pradesh Sustainable Agriculture', 'MH002E05', 'CMH002'),
+('CMH003P001', 'Maharashtra Healthcare Initiative', 'MH003E01', 'CMH003'),
+('CMH003P002', 'Gujarat Education Project', 'MH003E02', 'CMH003'),
+('CMH003P003', 'Goa Women Empowerment', 'MH003E03', 'CMH003'),
+('CMH003P004', 'Karnataka Environmental Project', 'MH003E04', 'CMH003'),
+('CMH003P005', 'Andhra Pradesh Sustainable Agriculture', 'MH003E05', 'CMH003');
+
+INSERT INTO Project (project_id, project_name, manager_id, charity_id)
+VALUES 
+('CDL001P001', 'Swachh Bharat Abhiyan', 'DL001E01', 'CDL001'),
+('CDL001P002', 'Beti Bachao, Beti Padhao', 'DL001E02', 'CDL001'),
+('CDL001P003', 'Digital India', 'DL001E03', 'CDL001'),
+('CDL001P004', 'Make in India', 'DL001E04', 'CDL001'),
+('CDL001P005', 'Skill India', 'DL001E05', 'CDL001'),
+('CDL002P001', 'Mid-Day Meal Scheme', 'HFC00201', 'CDL002'),
+('CDL002P002', 'Integrated Child Development Services', 'HFC00202', 'CDL002'),
+('CDL002P003', 'National Rural Health Mission', 'HFC00203', 'CDL002'),
+('CDL002P004', 'Sarva Shiksha Abhiyan', 'HFC00204', 'CDL002'),
+('CDL002P005', 'Pradhan Mantri Awas Yojana', 'HFC00205', 'CDL002'),
+('CDL003P001', 'Betiya Bachao Abhiyan', 'SSC00301', 'CDL003'),
+('CDL003P002', 'Swachh Bharat Abhiyan', 'SSC00302', 'CDL003'),
+('CDL003P003', 'Digital India', 'SSC00303', 'CDL003'),
+('CDL003P004', 'Make in India', 'SSC00304', 'CDL003'),
+('CDL003P005', 'Skill India', 'SSC00305', 'CDL003'),
+('CWB001P001', 'Mid-Day Meal Scheme', 'SSCWB00101', 'CWB001'),
+('CWB001P002', 'Integrated Child Development Services', 'SSCWB00102', 'CWB001'),
+('CWB001P003', 'National Rural Health Mission', 'SSCWB00103', 'CWB001'),
+('CWB001P004', 'Sarva Shiksha Abhiyan', 'SSCWB00104', 'CWB001'),
+('CWB001P005', 'Pradhan Mantri Awas Yojana', 'SSCWB00105', 'CWB001'),
+('CWB002P001', 'Swachh Bharat Abhiyan', 'PR001', 'CWB002'),
+('CWB002P002', 'Beti Bachao, Beti Padhao', 'PR002', 'CWB002'),
+('CWB002P003', 'Digital India', 'PR003', 'CWB002'),
+('CWB002P004', 'Make in India', 'PR004', 'CWB002'),
+('CWB002P005', 'Skill India', 'PR005', 'CWB002');
+
+INSERT INTO Project (project_id, project_name, manager_id, charity_id)
+VALUES 
+('CWB003P001', 'Sampark', 'SP001', 'CWB003'),
+('CWB003P002', 'Swayam Siddha', 'SP002', 'CWB003'),
+('CWB003P003', 'Ankur', 'SP003', 'CWB003'),
+('CWB003P004', 'Kadam', 'SP004', 'CWB003'),
+('CWB003P005', 'Nabadisha', 'SP005', 'CWB003');
+
+INSERT INTO Project (project_id, project_name, manager_id, charity_id)
+VALUES 
+  ('CRA001P001', 'Sankalp', 'AS001', 'CRA001'),
+  ('CRA001P002', 'Swabhimaan', 'AS002', 'CRA001'),
+  ('CRA001P003', 'Sahyog', 'AS003', 'CRA001'),
+  ('CRA001P004', 'Samarpan', 'AS004', 'CRA001'),
+  ('CRA001P005', 'Sampark', 'AS005', 'CRA001'),
+  ('CRA002P001', 'Udaan', 'UD001', 'CRA002'),
+  ('CRA002P002', 'Kadam', 'UD002', 'CRA002'),
+  ('CRA002P003', 'Nirbhay', 'UD003', 'CRA002'),
+  ('CRA002P004', 'Jagruti', 'UD004', 'CRA002'),
+  ('CRA002P005', 'Utkarsh', 'UD005', 'CRA002'),
+  ('CRA003P001', 'Sahara Jan Kalyan', 'CRA003E001', 'CRA003'),
+  ('CRA003P002', 'Sahara Vikas', 'CRA003E002', 'CRA003'),
+  ('CRA003P003', 'Sahara Yuva Samvad', 'CRA003E003', 'CRA003'),
+  ('CRA003P004', 'Sahara Swachh Bharat', 'CRA003E004', 'CRA003'),
+  ('CRA003P005', 'Sahara Samriddhi', 'CRA003E005', 'CRA003');
+  
+  
+  
+  
+
+  
+--Event
+INSERT INTO Event (charity_id, pincode, project_id, event_id, event_date) VALUES
+('CGJ001', '380001', 'CGJ001P001', 'CGJ001EV001', DATE '2022-05-01'),
+('CGJ001', '380002', 'CGJ001P001', 'CGJ001EV002', DATE '2022-07-15'),
+('CGJ001', '380003', 'CGJ001P002', 'CGJ001EV003', DATE '2022-09-22'),
+('CGJ001', '380004', 'CGJ001P002', 'CGJ001EV004', DATE '2022-10-31'),
+('CGJ001', '400007', 'CGJ001P003', 'CGJ001EV005', DATE '2022-11-10'),
+('CGJ001', '380006', 'CGJ001P003', 'CGJ001EV006', DATE '2023-01-05'),
+('CGJ001', '380007', 'CGJ001P004', 'CGJ001EV007', DATE '2023-03-12'),
+('CGJ001', '110001', 'CGJ001P004', 'CGJ001EV008', DATE '2023-04-01'),
+('CGJ001', '380009', 'CGJ001P005', 'CGJ001EV009', DATE '2023-04-15'),
+('CGJ001', '380010', 'CGJ001P005', 'CGJ001EV010', DATE '2023-04-20');
+
+INSERT INTO Event (charity_id, pincode, project_id, event_id, event_date) VALUES
+('CGJ002', '400001', 'CGJ002P001', 'CGJ002EV001', DATE '2022-06-10'),
+('CGJ002', '380009', 'CGJ002P001', 'CGJ002EV002', DATE '2022-08-20'),
+('CGJ002', '400003', 'CGJ002P002', 'CGJ002EV003', DATE '2022-10-05'),
+('CGJ002', '400004', 'CGJ002P002', 'CGJ002EV004', DATE '2022-11-15'),
+('CGJ002', '110006', 'CGJ002P003', 'CGJ002EV005', DATE '2022-12-25'),
+('CGJ002', '400006', 'CGJ002P003', 'CGJ002EV006', DATE '2023-02-14'),
+('CGJ002', '380001', 'CGJ002P004', 'CGJ002EV007', DATE '2023-03-19'),
+('CGJ002', '380008', 'CGJ002P004', 'CGJ002EV008', DATE '2023-04-02'),
+('CGJ002', '400009', 'CGJ002P005', 'CGJ002EV009', DATE '2023-04-12'),
+('CGJ002', '400010', 'CGJ002P005', 'CGJ002EV010', DATE '2023-04-21');
+
+
+INSERT INTO Event (charity_id, pincode, project_id, event_id, event_date) VALUES
+('CGJ003', '380003', 'CGJ003P001', 'CGJ003EV001', DATE '2022-05-15'),
+('CGJ003', '400002', 'CGJ003P001', 'CGJ003EV002', DATE '2022-06-10'),
+('CGJ003', '400003', 'CGJ003P001', 'CGJ003EV003', DATE '2022-08-20'),
+('CGJ003', '400004', 'CGJ003P002', 'CGJ003EV004', DATE '2022-07-01'),
+('CGJ003', '400005', 'CGJ003P002', 'CGJ003EV005', DATE '2022-09-05'),
+('CGJ003', '110001', 'CGJ003P003', 'CGJ003EV006', DATE '2022-06-20'),
+('CGJ003', '110002', 'CGJ003P003', 'CGJ003EV007', DATE '2022-07-15'),
+('CGJ003', '110003', 'CGJ003P003', 'CGJ003EV008', DATE '2022-08-30'),
+('CGJ003', '110004', 'CGJ003P004', 'CGJ003EV009', DATE '2022-06-25'),
+('CGJ003', '110005', 'CGJ003P004', 'CGJ003EV010', DATE '2022-08-12'),
+('CGJ003', '700001', 'CGJ003P005', 'CGJ003EV011', DATE '2022-07-10'),
+('CGJ003', '700002', 'CGJ003P005', 'CGJ003EV012', DATE '2022-09-02'),
+('CGJ003', '700003', 'CGJ003P005', 'CGJ003EV013', DATE '2022-09-25');
+
+
+INSERT INTO Event (charity_id, pincode, project_id, event_id, event_date)
+VALUES 
+('CMH001', '110001', 'CMH001P001', 'MH001EV001', DATE '2022-05-01'),
+('CMH001', '110002', 'CMH001P001', 'MH001EV002', DATE '2022-06-15'),
+('CMH001', '110003', 'CMH001P001', 'MH001EV003', DATE '2022-08-10'),
+('CMH001', '110004', 'CMH001P002', 'MH001EV001', DATE '2022-05-15'),
+('CMH001', '110005', 'CMH001P002', 'MH001EV002', DATE '2022-06-20'),
+('CMH001', '110006', 'CMH001P002', 'MH001EV003', DATE '2022-08-15'),
+('CMH001', '110007', 'CMH001P003', 'MH001EV001', DATE '2022-05-20'),
+('CMH001', '110008', 'CMH001P003', 'MH001EV002', DATE '2022-06-25'),
+('CMH001', '110009', 'CMH001P003', 'MH001EV003', DATE '2022-08-20'),
+('CMH001', '110010', 'CMH001P004', 'MH001EV001', DATE '2022-05-25'),
+('CMH001', '400001', 'CMH001P004', 'MH001EV002', DATE '2022-06-30'),
+('CMH001', '400002', 'CMH001P004', 'MH001EV003', DATE '2022-08-25'),
+('CMH001', '400003', 'CMH001P005', 'MH001EV001', DATE '2022-06-01'),
+('CMH001', '400004', 'CMH001P005', 'MH001EV002', DATE '2022-07-05'),
+('CMH001', '400005', 'CMH001P005', 'MH001EV003', DATE '2022-09-01'),
+('CMH002', '302001', 'CMH002P001', 'MH002EV001', DATE '2022-05-05'),
+('CMH002', '302002', 'CMH002P001', 'MH002EV002', DATE '2022-06-10'),
+('CMH002', '302003', 'CMH002P001', 'MH002EV003', DATE '2022-08-05'),
+('CMH002', '302004', 'CMH002P002', 'MH002EV001', DATE '2022-05-10'),
+('CMH002', '302005', 'CMH002P002', 'MH002EV002', DATE '2022-06-15'),
+('CMH002', '302006', 'CMH002P002', 'MH002EV003', DATE '2022-08-10'),
+('CMH002', '302007', 'CMH002P003', 'MH002EV001', DATE '2022-05-15'),
+('CMH002', '302008', 'CMH002P003', 'MH002EV002', DATE '2022-06-20'),
+('CMH002', '302009', 'CMH002P003', 'MH002EV003', DATE '2022-08-15'),
+('CMH002', '400001', 'CMH002P003', 'MH002EV004', DATE '2022-08-16'),
+('CMH002', '700001', 'CMH002P004', 'MH002EV001', DATE '2022-08-17'),
+('CMH002', '700007', 'CMH002P004', 'MH002EV002', DATE '2022-08-18'),
+('CMH002', '110010', 'CMH002P005', 'MH002EV001', DATE '2022-08-19');
+
+
+
+INSERT INTO Event (charity_id, pincode, project_id, event_id, event_date) VALUES
+('CMH003', '400001', 'CMH003P001', 'CMH003EV001', DATE '2022-07-12'),
+('CMH003', '400001', 'CMH003P001', 'CMH003EV002', DATE '2022-08-15'),
+('CMH003', '400001', 'CMH003P001', 'CMH003EV003', DATE '2022-10-05'),
+('CMH003', '110001', 'CMH003P002', 'CMH003EV001', DATE '2022-09-10'),
+('CMH003', '110001', 'CMH003P002', 'CMH003EV002', DATE '2023-01-20'),
+('CMH003', '110001', 'CMH003P002', 'CMH003EV003', DATE '2023-04-02'),
+('CMH003', '700001', 'CMH003P003', 'CMH003EV001', DATE '2022-06-17'),
+('CMH003', '700001', 'CMH003P003', 'CMH003EV002', DATE '2022-09-30'),
+('CMH003', '700001', 'CMH003P003', 'CMH003EV003', DATE '2022-11-11'),
+('CMH003', '302001', 'CMH003P004', 'CMH003EV001', DATE '2022-08-29'),
+('CMH003', '302001', 'CMH003P004', 'CMH003EV002', DATE '2022-11-21'),
+('CMH003', '302001', 'CMH003P004', 'CMH003EV003', DATE '2023-02-14'),
+('CMH003', '400001', 'CMH003P005', 'CMH003EV001', DATE '2022-10-12'),
+('CMH003', '400001', 'CMH003P005', 'CMH003EV002', DATE '2023-01-15'),
+('CMH003', '400001', 'CMH003P005', 'CMH003EV003', DATE '2023-03-28');
+
+INSERT INTO Event (charity_id, pincode, project_id, event_id, event_date) VALUES
+('CDL001', '380001', 'CDL001P001', 'DL001EV001', DATE '2022-01-01'),
+('CDL001', '380002', 'CDL001P001', 'DL001EV002', DATE '2022-05-02'),
+('CDL001', '400001', 'CDL001P001', 'DL001EV003', DATE '2022-07-04'),
+('CDL001', '380004', 'CDL001P002', 'DL001EV001', DATE '2022-08-08'),
+('CDL001', '380005', 'CDL001P002', 'DL001EV002', DATE '2022-09-10'),
+('CDL001', '380006', 'CDL001P002', 'DL001EV003', DATE '2022-10-12'),
+('CDL001', '380007', 'CDL001P003', 'DL001EV001', DATE '2022-11-14'),
+('CDL001', '700001', 'CDL001P003', 'DL001EV002', DATE '2022-12-16'),
+('CDL001', '380009', 'CDL001P003', 'DL001EV003', DATE '2023-01-18'),
+('CDL001', '380010', 'CDL001P004', 'DL001EV001', DATE '2023-03-20'),
+('CDL001', '400001', 'CDL001P004', 'DL001EV002', DATE '2023-04-22'),
+('CDL001', '400002', 'CDL001P004', 'DL001EV003', DATE '2023-05-24'),
+('CDL001', '400003', 'CDL001P005', 'DL001EV001', DATE '2023-06-26'),
+('CDL001', '400004', 'CDL001P005', 'DL001EV002', DATE '2023-07-28'),
+('CDL001', '400005', 'CDL001P005', 'DL001EV003', DATE '2023-08-30'),
+('CDL002', '110001', 'CDL002P001', 'DL002EV001', DATE '2022-02-02'),
+('CDL002', '110002', 'CDL002P001', 'DL002EV002', DATE '2022-06-06'),
+('CDL002', '110003', 'CDL002P001', 'DL002EV003', DATE '2022-10-10'),
+('CDL002', '110004', 'CDL002P002', 'DL002EV001', DATE '2022-11-12'),
+('CDL002', '110005', 'CDL002P002', 'DL002EV002', DATE '2022-12-14'),
+('CDL002', '110006', 'CDL002P002', 'DL002EV003', DATE '2023-01-16'),
+('CDL002', '110007', 'CDL002P003', 'DL002EV001', DATE '2023-02-18'),
+('CDL002', '110008', 'CDL002P003', 'DL002EV002', DATE '2023-03-20'),
+('CDL002', '110009', 'CDL002P003', 'DL002EV003', DATE '2023-04-22'),
+('CDL002', '110009', 'CDL002P004', 'DL002EV001', DATE '2023-03-23'),
+('CDL002', '700001', 'CDL002P004', 'DL002EV002', DATE '2023-03-24'),
+('CDL002', '700002', 'CDL002P005', 'DL002EV001', DATE '2023-03-25'),
+('CDL002', '110009', 'CDL002P005', 'DL002EV002', DATE '2023-03-26');
+
+
+
+INSERT INTO Event (charity_id, pincode, project_id, event_id, event_date) VALUES
+('CDL003', '110003', 'CDL003P003', 'CDL003EV001', DATE '2022-01-20'),
+('CDL003', '110003', 'CDL003P003', 'CDL003EV002', DATE '2022-05-15'),
+('CDL003', '110003', 'CDL003P003', 'CDL003EV003', DATE '2022-08-05'),
+('CDL003', '110003', 'CDL003P004', 'CDL003EV001', DATE '2022-11-12'),
+('CDL003', '110003', 'CDL003P004', 'CDL003EV002', DATE '2023-02-25'),
+('CDL003', '110003', 'CDL003P004', 'CDL003EV003', DATE '2023-05-08'),
+('CWB001', '700001', 'CWB001P002', 'CWB001EV001', DATE '2022-03-20'),
+('CWB001', '700001', 'CWB001P002', 'CWB001EV002', DATE '2022-06-07'),
+('CWB001', '700001', 'CWB001P002', 'CWB001EV003', DATE '2022-10-02'),
+('CWB001', '700001', 'CWB001P003', 'CWB001EV001', DATE '2023-01-01'),
+('CWB001', '700001', 'CWB001P003', 'CWB001EV002', DATE '2023-03-20'),
+('CWB001', '700001', 'CWB001P003', 'CWB001EV003', DATE '2023-06-17'),
+('CWB002', '700002', 'CWB002P001', 'CWB002EV001', DATE '2022-02-14'),
+('CWB002', '700002', 'CWB002P001', 'CWB002EV002', DATE '2022-05-01'),
+('CWB002', '700002', 'CWB002P001', 'CWB002EV003', DATE '2022-09-25'),
+('CWB002', '700002', 'CWB002P002', 'CWB002EV001', DATE '2023-02-05'),
+('CWB002', '700002', 'CWB002P002', 'CWB002EV002', DATE '2023-05-16'),
+('CWB002', '700002', 'CWB002P002', 'CWB002EV003', DATE '2023-08-06');
+
+
+INSERT INTO Event (charity_id, pincode, project_id, event_id, event_date)
+VALUES 
+    ('CRA001', '380001', 'CRA001P001', 'RA001EV001', DATE '2022-06-10'),
+    ('CRA001', '110005', 'CRA001P001', 'RA001EV002', DATE '2022-07-12'),
+    ('CRA001', '400006', 'CRA001P001', 'RA001EV003', DATE '2022-08-18'),
+    ('CRA001', '302008', 'CRA001P002', 'RA002EV001', DATE '2022-06-08'),
+    ('CRA001', '700007', 'CRA001P002', 'RA002EV002', DATE '2022-07-10'),
+    ('CRA001', '400010', 'CRA001P002', 'RA002EV003', DATE '2022-08-12'),
+    ('CRA001', '110009', 'CRA001P003', 'RA003EV001', DATE '2022-06-15'),
+    ('CRA001', '380009', 'CRA001P003', 'RA003EV002', DATE '2022-07-20'),
+    ('CRA001', '700004', 'CRA001P003', 'RA003EV003', DATE '2022-08-24'),
+    ('CRA001', '302003', 'CRA001P004', 'RA004EV001', DATE '2022-06-05'),
+    ('CRA001', '400003', 'CRA001P004', 'RA004EV002', DATE '2022-07-06'),
+    ('CRA001', '110002', 'CRA001P004', 'RA004EV003', DATE '2022-08-08'),
+    ('CRA001', '380002', 'CRA001P005', 'RA005EV001', DATE '2022-06-17'),
+    ('CRA001', '700002', 'CRA001P005', 'RA005EV002', DATE '2022-07-18'),
+    ('CRA001', '110001', 'CRA001P005', 'RA005EV003', DATE '2022-08-19');
+
+
+
+--Volunteer
+
+INSERT INTO Volunteer (volunteer_id, volunteer_name, charity_id, project_id, event_id)
+VALUES
+('VGJ001P001EV001V001', 'Rajesh Kumar', 'CGJ001', 'CGJ001P001', 'CGJ001EV001'),
+('VGJ001P001EV001V002', 'Neha Sharma', 'CGJ001', 'CGJ001P001', 'CGJ001EV001'),
+('VGJ001P001EV001V003', 'Amit Patel', 'CGJ001', 'CGJ001P001', 'CGJ001EV001'),
+('VGJ001P001EV002V001', 'Sneha Singh', 'CGJ001', 'CGJ001P001', 'CGJ001EV002'),
+('VGJ001P001EV002V002', 'Rohit Sharma', 'CGJ001', 'CGJ001P001', 'CGJ001EV002'),
+('VGJ001P001EV002V003', 'Nidhi Gupta', 'CGJ001', 'CGJ001P001', 'CGJ001EV002'),
+('VGJ001P002EV003V001', 'Sanjay Mehta', 'CGJ001', 'CGJ001P002', 'CGJ001EV003'),
+('VGJ001P002EV003V002', 'Mukesh Shah', 'CGJ001', 'CGJ001P002', 'CGJ001EV003'),
+('VGJ001P002EV003V003', 'Priya Patel', 'CGJ001', 'CGJ001P002', 'CGJ001EV003'),
+('VGJ001P002EV004V001', 'Karan Mehta', 'CGJ001', 'CGJ001P002', 'CGJ001EV004'),
+('VGJ001P002EV004V002', 'Preeti Desai', 'CGJ001', 'CGJ001P002', 'CGJ001EV004'),
+('VGJ001P002EV004V003', 'Arun Shah', 'CGJ001', 'CGJ001P002', 'CGJ001EV004'),
+('VGJ001P003EV005V001', 'Shreya Patel', 'CGJ001', 'CGJ001P003', 'CGJ001EV005'),
+('VGJ001P003EV005V002', 'Kunal Sharma', 'CGJ001', 'CGJ001P003', 'CGJ001EV005'),
+('VGJ001P003EV006V001', 'Bhavika Gupta', 'CGJ001', 'CGJ001P003', 'CGJ001EV006'),
+('VGJ001P003EV006V002', 'Rajat Mehta', 'CGJ001', 'CGJ001P003', 'CGJ001EV006'),
+('VGJ001P004EV007V001', 'Kavya Shah', 'CGJ001', 'CGJ001P004', 'CGJ001EV007'),
+('VGJ001P004EV007V002', 'Kunal Shah', 'CGJ001', 'CGJ001P004', 'CGJ001EV007'),
+('VGJ001P004EV008V001', 'Ritu Patel', 'CGJ001', 'CGJ001P004', 'CGJ001EV008'),
+('VGJ001P004EV008V002', 'Gaurav Singh', 'CGJ001', 'CGJ001P004', 'CGJ001EV008');
+
+
+INSERT INTO Volunteer (volunteer_id, volunteer_name, charity_id, project_id, event_id) VALUES
+('VGJ002P001EV001V001', 'Amit Patel', 'CGJ002', 'CGJ002P001', 'CGJ002EV001'),
+('VGJ002P001EV001V002', 'Raj Sharma', 'CGJ002', 'CGJ002P001', 'CGJ002EV001'),
+('VGJ002P001EV002V001', 'Deepika Gupta', 'CGJ002', 'CGJ002P001', 'CGJ002EV002'),
+('VGJ002P001EV002V002', 'Shreya Shah', 'CGJ002', 'CGJ002P001', 'CGJ002EV002'),
+('VGJ002P001EV002V003', 'Neha Singh', 'CGJ002', 'CGJ002P001', 'CGJ002EV002'),
+('VGJ002P002EV003V001', 'Rahul Verma', 'CGJ002', 'CGJ002P002', 'CGJ002EV003'),
+('VGJ002P002EV003V002', 'Vishal Kumar', 'CGJ002', 'CGJ002P002', 'CGJ002EV003'),
+('VGJ002P002EV003V003', 'Priya Singh', 'CGJ002', 'CGJ002P002', 'CGJ002EV003'),
+('VGJ002P002EV004V001', 'Prachi Shah', 'CGJ002', 'CGJ002P002', 'CGJ002EV004'),
+('VGJ002P002EV004V002', 'Aman Singh', 'CGJ002', 'CGJ002P002', 'CGJ002EV004'),
+('VGJ002P002EV004V003', 'Shikha Agarwal', 'CGJ002', 'CGJ002P002', 'CGJ002EV004'),
+('VGJ002P002EV004V004', 'Rohit Gupta', 'CGJ002', 'CGJ002P002', 'CGJ002EV004'),
+('VGJ002P003EV005V001', 'Vikas Singh', 'CGJ002', 'CGJ002P003', 'CGJ002EV005'),
+('VGJ002P003EV005V002', 'Ankit Patel', 'CGJ002', 'CGJ002P003', 'CGJ002EV005'),
+('VGJ002P003EV006V001', 'Manish Agarwal', 'CGJ002', 'CGJ002P003', 'CGJ002EV006'),
+('VGJ002P003EV006V002', 'Kriti Shah', 'CGJ002', 'CGJ002P003', 'CGJ002EV006'),
+('VGJ002P004EV007V001', 'Anjali Singh', 'CGJ002', 'CGJ002P004', 'CGJ002EV007'),
+('VGJ002P004EV007V002', 'Rajat Sharma', 'CGJ002', 'CGJ002P004', 'CGJ002EV007'),
+('VGJ002P004EV007V003', 'Dhruv Shah', 'CGJ002', 'CGJ002P004', 'CGJ002EV007'),
+('VGJ002P004EV008V001', 'Nisha Patel', 'CGJ002', 'CGJ002P004', 'CGJ002EV008');
+
+
+INSERT INTO Volunteer (volunteer_id, volunteer_name, charity_id, project_id, event_id)
+VALUES 
+('VGJ003P001EV001V001', 'Arjun', 'CGJ003', 'CGJ003P001', 'CGJ003EV001'),
+('VGJ003P001EV001V002', 'Neha', 'CGJ003', 'CGJ003P001', 'CGJ003EV001'),
+('VGJ003P001EV002V001', 'Rohan', 'CGJ003', 'CGJ003P001', 'CGJ003EV002'),
+('VGJ003P001EV002V002', 'Sneha', 'CGJ003', 'CGJ003P001', 'CGJ003EV002'),
+('VGJ003P001EV002V003', 'Aryan', 'CGJ003', 'CGJ003P001', 'CGJ003EV002'),
+('VGJ003P001EV003V001', 'Pooja', 'CGJ003', 'CGJ003P001', 'CGJ003EV003'),
+('VGJ003P001EV003V002', 'Akash', 'CGJ003', 'CGJ003P001', 'CGJ003EV003'),
+('VGJ003P002EV003V003', 'Anjali', 'CGJ003', 'CGJ003P001', 'CGJ003EV003'),
+('VGJ003P002EV004V001', 'Sagar', 'CGJ003', 'CGJ003P002', 'CGJ003EV004'),
+('VGJ003P002EV004V002', 'Amit', 'CGJ003', 'CGJ003P002', 'CGJ003EV004'),
+('VGJ003P002EV004V003', 'Priti', 'CGJ003', 'CGJ003P002', 'CGJ003EV004'),
+('VGJ003P002EV005V001', 'Raj', 'CGJ003', 'CGJ003P002', 'CGJ003EV005'),
+('VGJ003P002EV005V002', 'Shivani', 'CGJ003', 'CGJ003P002', 'CGJ003EV005'),
+('VGJ003P002EV006V001', 'Vikram', 'CGJ003', 'CGJ003P003', 'CGJ003EV006'),
+('VGJ003P003EV006V002', 'Sakshi', 'CGJ003', 'CGJ003P003', 'CGJ003EV006'),
+('VGJ003P003EV007V001', 'Rahul', 'CGJ003', 'CGJ003P003', 'CGJ003EV007'),
+('VGJ003P003EV007V002', 'Pratik', 'CGJ003', 'CGJ003P003', 'CGJ003EV007'),
+('VGJ003P003EV008V001', 'Komal', 'CGJ003', 'CGJ003P003', 'CGJ003EV008'),
+('VGJ003P004EV009V001', 'Yogesh', 'CGJ003', 'CGJ003P004', 'CGJ003EV009'),
+('VGJ003P004EV009V002', 'Manisha', 'CGJ003', 'CGJ003P004', 'CGJ003EV009'),
+('VGJ003P004EV010V001', 'Riya', 'CGJ003', 'CGJ003P004', 'CGJ003EV010');
+
+
+INSERT INTO Volunteer (volunteer_id, volunteer_name, charity_id, project_id, event_id)
+VALUES 
+('VMH001P001EV001V001', 'Amit', 'CMH001', 'CMH001P001', 'MH001EV001'),
+('VMH001P001EV001V002', 'Anjali', 'CMH001', 'CMH001P001', 'MH001EV001'),
+('VMH001P001EV001V003', 'Rahul', 'CMH001', 'CMH001P001', 'MH001EV001'),
+('VMH001P001EV002V001', 'Sunita', 'CMH001', 'CMH001P001', 'MH001EV002'),
+('VMH001P001EV002V002', 'Ravi', 'CMH001', 'CMH001P001', 'MH001EV002'),
+('VMH001P001EV002V003', 'Priya', 'CMH001', 'CMH001P001', 'MH001EV002'),
+('VMH001P001EV003V001', 'Vikas', 'CMH001', 'CMH001P001', 'MH001EV003'),
+('VMH001P001EV003V002', 'Kavita', 'CMH001', 'CMH001P001', 'MH001EV003'),
+('VMH001P001EV003V003', 'Nitin', 'CMH001', 'CMH001P001', 'MH001EV003'),
+('VMH001P002EV001V001', 'Raj', 'CMH001', 'CMH001P002', 'MH001EV001'),
+('VMH001P002EV001V002', 'Kiran', 'CMH001', 'CMH001P002', 'MH001EV001'),
+('VMH001P002EV002V001', 'Shubham', 'CMH001', 'CMH001P002', 'MH001EV002'),
+('VMH001P002EV002V002', 'Pooja', 'CMH001', 'CMH001P002', 'MH001EV002'),
+('VMH001P002EV003V001', 'Sakshi', 'CMH001', 'CMH001P002', 'MH001EV003'),
+('VMH001P002EV003V002', 'Vivek', 'CMH001', 'CMH001P002', 'MH001EV003'),
+('VMH001P003EV001V001', 'Suresh', 'CMH001', 'CMH001P003', 'MH001EV001'),
+('VMH001P003EV001V002', 'Komal', 'CMH001', 'CMH001P003', 'MH001EV001'),
+('VMH001P003EV002V001', 'Rajat', 'CMH001', 'CMH001P003', 'MH001EV002'),
+('VMH001P003EV002V002', 'Neha', 'CMH001', 'CMH001P003', 'MH001EV002'),
+('VMH001P003EV003V001', 'Amita', 'CMH001', 'CMH001P003', 'MH001EV003'),
+('VMH001P003EV003V002', 'Rohit', 'CMH001', 'CMH001P003', 'MH001EV003');
+
+INSERT INTO Volunteer (volunteer_id, volunteer_name, charity_id, project_id, event_id)
+VALUES
+('VMH002P001EV001V001', 'Amit', 'CMH002', 'CMH002P001', 'MH002EV001'),
+('VMH002P001EV001V002', 'Rahul', 'CMH002', 'CMH002P001', 'MH002EV001'),
+('VMH002P001EV002V001', 'Sneha', 'CMH002', 'CMH002P001', 'MH002EV002'),
+('VMH002P001EV002V002', 'Ritu', 'CMH002', 'CMH002P001', 'MH002EV002'),
+('VMH002P001EV002V003', 'Gaurav', 'CMH002', 'CMH002P001', 'MH002EV002'),
+('VMH002P001EV003V001', 'Neha', 'CMH002', 'CMH002P001', 'MH002EV003'),
+('VMH002P001EV003V002', 'Aryan', 'CMH002', 'CMH002P001', 'MH002EV003'),
+('VMH002P001EV003V003', 'Kavya', 'CMH002', 'CMH002P001', 'MH002EV003'),
+('VMH002P002EV001V001', 'Shreya', 'CMH002', 'CMH002P002', 'MH002EV001'),
+('VMH002P002EV001V002', 'Naveen', 'CMH002', 'CMH002P002', 'MH002EV001'),
+('VMH002P002EV002V001', 'Vikram', 'CMH002', 'CMH002P002', 'MH002EV002'),
+('VMH002P002EV002V002', 'Surbhi', 'CMH002', 'CMH002P002', 'MH002EV002'),
+('VMH002P002EV002V003', 'Sandeep', 'CMH002', 'CMH002P002', 'MH002EV002'),
+('VMH002P002EV003V001', 'Anushka', 'CMH002', 'CMH002P002', 'MH002EV003'),
+('VMH002P002EV003V002', 'Rajat', 'CMH002', 'CMH002P002', 'MH002EV003'),
+('VMH002P002EV003V003', 'Ankit', 'CMH002', 'CMH002P002', 'MH002EV003'),
+('VMH002P003EV001V001', 'Siddharth', 'CMH002', 'CMH002P003', 'MH002EV001'),
+('VMH002P003EV001V002', 'Dhruv', 'CMH002', 'CMH002P003', 'MH002EV001'),
+('VMH002P003EV002V001', 'Nisha', 'CMH002', 'CMH002P003', 'MH002EV002'),
+('VMH002P003EV002V002', 'Akash', 'CMH002', 'CMH002P003', 'MH002EV002'),
+('VMH002P003EV002V003', 'Priya', 'CMH002', 'CMH002P003', 'MH002EV002');
+
+INSERT INTO Volunteer (volunteer_id, volunteer_name, charity_id, project_id, event_id)
+VALUES
+('VMH002P005EV001V001', 'Aarav Kumar', 'CMH002', 'CMH002P005', 'MH002EV001'),
+('VMH002P005EV001V002', 'Riya Singh', 'CMH002', 'CMH002P005', 'MH002EV001'),
+('VMH002P005EV001V003', 'Aditya Patel', 'CMH002', 'CMH002P005', 'MH002EV001');
+
+
+
+
+
+
+INSERT INTO Volunteer (volunteer_id, volunteer_name, charity_id, project_id, event_id) VALUES
+('VMH003P001EV001V001', 'Anjali Gupta', 'CMH003', 'CMH003P001', 'CMH003EV001'),
+('VMH003P001EV002V001', 'Arvind Sharma', 'CMH003', 'CMH003P001', 'CMH003EV001'),
+('VMH003P001EV003V001', 'Rajesh Kumar', 'CMH003', 'CMH003P001', 'CMH003EV002'),
+('VMH003P001EV004V001', 'Reena Singh', 'CMH003', 'CMH003P001', 'CMH003EV002'),
+('VMH003P001EV005V001', 'Kapil Sharma', 'CMH003', 'CMH003P001', 'CMH003EV003'),
+('VMH003P001EV006V001', 'Sneha Kumari', 'CMH003', 'CMH003P001', 'CMH003EV003'),
+('VMH003P002EV001V001', 'Akash Sharma', 'CMH003', 'CMH003P002', 'CMH003EV001'),
+('VMH003P002EV002V001', 'Amit Kumar', 'CMH003', 'CMH003P002', 'CMH003EV001'),
+('VMH003P002EV003V001', 'Mohit Choudhary', 'CMH003', 'CMH003P002', 'CMH003EV002'),
+('VMH003P002EV004V001', 'Neha Singh', 'CMH003', 'CMH003P002', 'CMH003EV002'),
+('VMH003P002EV005V001', 'Anu Sharma', 'CMH003', 'CMH003P002', 'CMH003EV003'),
+('VMH003P002EV006V001', 'Gaurav Yadav', 'CMH003', 'CMH003P002', 'CMH003EV003'),
+('VMH003P003EV001V001', 'Sakshi Gupta', 'CMH003', 'CMH003P003', 'CMH003EV001'),
+('VMH003P003EV002V001', 'Kunal Singh', 'CMH003', 'CMH003P003', 'CMH003EV001'),
+('VMH003P003EV003V001', 'Sanjeev Kumar', 'CMH003', 'CMH003P003', 'CMH003EV002'),
+('VMH003P003EV004V001', 'Ravi Sharma', 'CMH003', 'CMH003P003', 'CMH003EV002'),
+('VMH003P003EV005V001', 'Anjana Singh', 'CMH003', 'CMH003P003', 'CMH003EV003'),
+('VMH003P003EV006V001', 'Shivam Gupta', 'CMH003', 'CMH003P003', 'CMH003EV003'),
+('VMH003P004EV001V001', 'Nisha Kumari', 'CMH003', 'CMH003P004', 'CMH003EV001'),
+('VMH003P004EV002V001', 'Vikram Singh', 'CMH003', 'CMH003P004', 'CMH003EV001');
+
+
+INSERT INTO Volunteer (volunteer_id, volunteer_name, charity_id, project_id, event_id) VALUES
+('VDL001P001EV001V001', 'Rajesh Sharma', 'CDL001', 'CDL001P001', 'DL001EV001'),
+('VDL001P001EV001V002', 'Aarti Patel', 'CDL001', 'CDL001P001', 'DL001EV001'),
+('VDL001P001EV001V003', 'Suresh Singh', 'CDL001', 'CDL001P001', 'DL001EV001'),
+('VDL001P001EV002V001', 'Vikas Gupta', 'CDL001', 'CDL001P001', 'DL001EV002'),
+('VDL001P001EV002V002', 'Amita Singh', 'CDL001', 'CDL001P001', 'DL001EV002'),
+('VDL001P001EV003V001', 'Hari Dubey', 'CDL001', 'CDL001P001', 'DL001EV003'),
+('VDL001P001EV003V002', 'Kavita Shah', 'CDL001', 'CDL001P001', 'DL001EV003'),
+('VDL001P001EV003V003', 'Arvind Patel', 'CDL001', 'CDL001P001', 'DL001EV003'),
+('VDL001P002EV001V001', 'Vidya Iyer', 'CDL001', 'CDL001P002', 'DL001EV001'),
+('VDL001P002EV001V002', 'Gaurav Singh', 'CDL001', 'CDL001P002', 'DL001EV001'),
+('VDL001P002EV002V001', 'Divya Patel', 'CDL001', 'CDL001P002', 'DL001EV002'),
+('VDL001P002EV002V002', 'Alok Kumar', 'CDL001', 'CDL001P002', 'DL001EV002'),
+('VDL001P002EV003V001', 'Riya Gupta', 'CDL001', 'CDL001P002', 'DL001EV003'),
+('VDL001P002EV003V002', 'Pankaj Sharma', 'CDL001', 'CDL001P002', 'DL001EV003'),
+('VDL001P002EV003V003', 'Sudha Iyer', 'CDL001', 'CDL001P002', 'DL001EV003'),
+('VDL001P003EV001V001', 'Ajay Patel', 'CDL001', 'CDL001P003', 'DL001EV001'),
+('VDL001P003EV001V002', 'Geeta Singh', 'CDL001', 'CDL001P003', 'DL001EV001'),
+('VDL001P003EV002V001', 'Nisha Gupta', 'CDL001', 'CDL001P003', 'DL001EV002'),
+('VDL001P003EV002V002', 'Rajat Singh', 'CDL001', 'CDL001P003', 'DL001EV002'),
+('VDL001P003EV003V001', 'Shivani Sharma', 'CDL001', 'CDL001P003', 'DL001EV003');
+
+INSERT INTO Volunteer (volunteer_id, volunteer_name, charity_id, project_id, event_id) VALUES
+('VDL002P001EV001V001', 'Amit', 'CDL002', 'CDL002P001', 'DL002EV001'),
+('VDL002P001EV001V002', 'Raj', 'CDL002', 'CDL002P001', 'DL002EV001'),
+('VDL002P001EV001V003', 'Arun', 'CDL002', 'CDL002P001', 'DL002EV001'),
+('VDL002P001EV002V001', 'Suresh', 'CDL002', 'CDL002P001', 'DL002EV002'),
+('VDL002P001EV002V002', 'Kamal', 'CDL002', 'CDL002P001', 'DL002EV002'),
+('VDL002P001EV002V003', 'Ramesh', 'CDL002', 'CDL002P001', 'DL002EV002'),
+('VDL002P001EV003V001', 'Gaurav', 'CDL002', 'CDL002P001', 'DL002EV003'),
+('VDL002P001EV003V002', 'Mukesh', 'CDL002', 'CDL002P001', 'DL002EV003'),
+('VDL002P001EV003V003', 'Rajesh', 'CDL002', 'CDL002P001', 'DL002EV003'),
+('VDL002P002EV001V001', 'Aarti', 'CDL002', 'CDL002P002', 'DL002EV001'),
+('VDL002P002EV001V002', 'Kavita', 'CDL002', 'CDL002P002', 'DL002EV001'),
+('VDL002P002EV001V003', 'Anita', 'CDL002', 'CDL002P002', 'DL002EV001'),
+('VDL002P002EV002V001', 'Preeti', 'CDL002', 'CDL002P002', 'DL002EV002'),
+('VDL002P002EV002V002', 'Smita', 'CDL002', 'CDL002P002', 'DL002EV002'),
+('VDL002P002EV002V003', 'Priya', 'CDL002', 'CDL002P002', 'DL002EV002'),
+('VDL002P002EV003V001', 'Reena', 'CDL002', 'CDL002P002', 'DL002EV003'),
+('VDL002P002EV003V002', 'Seema', 'CDL002', 'CDL002P002', 'DL002EV003'),
+('VDL002P002EV003V003', 'Neha', 'CDL002', 'CDL002P002', 'DL002EV003'),
+('VDL002P003EV001V001', 'Vinod', 'CDL002', 'CDL002P003', 'DL002EV001'),
+('VDL002P003EV001V002', 'Rahul', 'CDL002', 'CDL002P003', 'DL002EV001'),
+('VDL002P003EV001V003', 'Sandeep', 'CDL002', 'CDL002P003', 'DL002EV001');
+
+INSERT INTO Volunteer (volunteer_id, volunteer_name, charity_id, project_id, event_id)
+VALUES
+('VDL002P003EV002V001', 'Aarav Gupta', 'CDL002', 'CDL002P003', 'DL002EV002'),
+('VDL002P003EV002V002', 'Aditi Sharma', 'CDL002', 'CDL002P003', 'DL002EV002'),
+('VDL002P003EV002V003', 'Amit Patel', 'CDL002', 'CDL002P003', 'DL002EV002'),
+('VDL002P003EV003V001', 'Chirag Singh', 'CDL002', 'CDL002P003', 'DL002EV003'),
+('VDL002P003EV003V002', 'Deepa Singh', 'CDL002', 'CDL002P003', 'DL002EV003'),
+('VDL002P003EV003V003', 'Esha Gupta', 'CDL002', 'CDL002P003', 'DL002EV003'),
+('VDL002P004EV004V001', 'Faisal Khan', 'CDL002', 'CDL002P004', 'DL002EV001'),
+
+('VDL002P001EV005V001', 'Jaya Mishra', 'CDL002', 'CDL002P005', 'DL002EV001'),
+('VDL002P001EV005V002', 'Kunal Sharma', 'CDL002', 'CDL002P005', 'DL002EV001'),
+('VDL002P001EV005V003', 'Leena Singh', 'CDL002', 'CDL002P005', 'DL002EV001'),
+('VDL002P001EV006V001', 'Manish Patel', 'CDL002', 'CDL002P005', 'DL002EV002'),
+('VDL002P001EV006V002', 'Neha Gupta', 'CDL002', 'CDL002P005', 'DL002EV002'),
+('VDL002P001EV006V003', 'Om Singh', 'CDL002', 'CDL002P005', 'DL002EV002');
+
+INSERT INTO Volunteer (volunteer_id, volunteer_name, charity_id, project_id, event_id)
+VALUES
+('VDL003P003EV001V001', 'Amit', 'CDL003', 'CDL003P003', 'CDL003EV001'),
+('VDL003P003EV001V002', 'Priya', 'CDL003', 'CDL003P003', 'CDL003EV001'),
+('VDL003P003EV002V001', 'Rahul', 'CDL003', 'CDL003P003', 'CDL003EV002'),
+('VDL003P003EV002V002', 'Anjali', 'CDL003', 'CDL003P003', 'CDL003EV002'),
+('VDL003P003EV002V003', 'Kunal', 'CDL003', 'CDL003P003', 'CDL003EV002'),
+('VDL003P003EV003V001', 'Neha', 'CDL003', 'CDL003P003', 'CDL003EV003'),
+('VDL003P003EV003V002', 'Saurabh', 'CDL003', 'CDL003P003', 'CDL003EV003'),
+('VDL003P003EV003V003', 'Shivani', 'CDL003', 'CDL003P003', 'CDL003EV003'),
+('VDL003P004EV001V001', 'Pooja', 'CDL003', 'CDL003P004', 'CDL003EV001'),
+('VDL003P004EV001V002', 'Aakash', 'CDL003', 'CDL003P004', 'CDL003EV001'),
+('VDL003P004EV001V003', 'Varun', 'CDL003', 'CDL003P004', 'CDL003EV001'),
+('VDL003P004EV002V001', 'Rohan', 'CDL003', 'CDL003P004', 'CDL003EV002'),
+('VDL003P004EV002V002', 'Nidhi', 'CDL003', 'CDL003P004', 'CDL003EV002'),
+('VDL003P004EV002V003', 'Siddharth', 'CDL003', 'CDL003P004', 'CDL003EV002'),
+('VDL003P004EV003V001', 'Aman', 'CDL003', 'CDL003P004', 'CDL003EV003'),
+('VDL003P004EV003V002', 'Priyanka', 'CDL003', 'CDL003P004', 'CDL003EV003'),
+('VDL003P004EV003V003', 'Yash', 'CDL003', 'CDL003P004', 'CDL003EV003');
+
+INSERT INTO Volunteer (volunteer_id, volunteer_name, charity_id, project_id, event_id) VALUES
+('VRA001P001EV001V001', 'Arjun', 'CRA001', 'CRA001P001', 'RA001EV001'),
+('VRA001P001EV001V002', 'Priya', 'CRA001', 'CRA001P001', 'RA001EV001'),
+('VRA001P001EV001V003', 'Sandeep', 'CRA001', 'CRA001P001', 'RA001EV001'),
+('VRA001P001EV002V001', 'Rajesh', 'CRA001', 'CRA001P001', 'RA001EV002'),
+('VRA001P001EV002V002', 'Neha', 'CRA001', 'CRA001P001', 'RA001EV002'),
+('VRA001P001EV002V003', 'Shruti', 'CRA001', 'CRA001P001', 'RA001EV002'),
+('VRA001P001EV003V001', 'Vikas', 'CRA001', 'CRA001P001', 'RA001EV003'),
+('VRA001P001EV003V002', 'Anjali', 'CRA001', 'CRA001P001', 'RA001EV003'),
+('VRA001P001EV003V003', 'Amit', 'CRA001', 'CRA001P001', 'RA001EV003'),
+('VRA001P002EV001V001', 'Pooja', 'CRA001', 'CRA001P002', 'RA002EV001'),
+('VRA001P002EV001V002', 'Rahul', 'CRA001', 'CRA001P002', 'RA002EV001'),
+('VRA001P002EV001V003', 'Mohan', 'CRA001', 'CRA001P002', 'RA002EV001'),
+('VRA001P002EV002V001', 'Sachin', 'CRA001', 'CRA001P002', 'RA002EV002'),
+('VRA001P002EV002V002', 'Nitin', 'CRA001', 'CRA001P002', 'RA002EV002'),
+('VRA001P002EV002V003', 'Seema', 'CRA001', 'CRA001P002', 'RA002EV002'),
+('VRA001P002EV003V001', 'Ankit', 'CRA001', 'CRA001P002', 'RA002EV003'),
+('VRA001P002EV003V002', 'Sonali', 'CRA001', 'CRA001P002', 'RA002EV003'),
+('VRA001P002EV003V003', 'Aryan', 'CRA001', 'CRA001P002', 'RA002EV003');
+
+
+--Donation
+INSERT INTO Donation (aadharcard_no, donation_id, donation_amount, donation_date, project_id, charity_id, method)
+VALUES
+    (123456789012, 'CGJ001P001D001', 1000, DATE '2022-01-15', 'CGJ001P001', 'CGJ001', 'cash'),
+    (234567890123, 'CGJ001P002D002', 5000, DATE '2023-01-15', 'CGJ001P002', 'CGJ001', 'check'),
+    (345678901234, 'CGJ001P003D003', 2000, DATE '2022-01-16', 'CGJ001P003', 'CGJ001', 'cash'),
+    (456789012345, 'CGJ001P004D004', 1500, DATE '2023-03-16', 'CGJ001P004', 'CGJ001', 'check'),
+    (567890123456, 'CGJ001P005D005', 3000, DATE '2022-01-16', 'CGJ001P005', 'CGJ001', 'cash'),
+    (678901234567, 'CGJ002P001D006', 2500, DATE '2022-01-16', 'CGJ002P001', 'CGJ002', 'check'),
+    (789012345678, 'CGJ002P002D007', 4000, DATE '2022-01-17', 'CGJ002P002', 'CGJ002', 'cash'),
+    (890123456789, 'CGJ002P003D008', 3000, DATE '2023-03-17', 'CGJ002P003', 'CGJ002', 'check'),
+    (901234567890, 'CGJ002P004D009', 5000, DATE '2022-07-17', 'CGJ002P004', 'CGJ002', 'cash'),
+    (112345678901, 'CGJ002P005D010', 1000, DATE '2022-01-18', 'CGJ002P005', 'CGJ002', 'check'),
+    (123456789012, 'CGJ003P001D011', 2000, DATE '2022-01-18', 'CGJ003P001', 'CGJ003', 'cash'),
+    (234567890123, 'CGJ003P002D012', 1500, DATE '2023-02-18', 'CGJ003P002', 'CGJ003', 'check'),
+    (345678901234, 'CGJ003P003D013', 3000, DATE '2022-10-19', 'CGJ003P003', 'CGJ003', 'cash'),
+    (456789012345, 'CGJ003P004D014', 2500, DATE '2023-01-30', 'CGJ003P004', 'CGJ003', 'check'),
+    (567890123456, 'CGJ003P005D015', 4000, DATE '2022-01-19', 'CGJ003P005', 'CGJ003', 'cash'),
+    (123456789012, 'CMH001P001D016', 2000, DATE '2023-01-29', 'CMH001P001', 'CMH001', 'check'),
+    (234567890123, 'CMH001P002D017', 1500, DATE '2022-01-20', 'CMH001P002', 'CMH001', 'cash');
+
+INSERT INTO Donation (aadharcard_no, donation_id, donation_amount, donation_date, project_id, charity_id, method) VALUES
+  (223456789012, 'CGJ001P001D018', 5000, DATE '2022-01-05', 'CGJ001P001', 'CGJ001', 'cash'),
+  (334567890123, 'CGJ001P002D019', 2500, DATE '2022-02-10', 'CGJ001P002', 'CGJ001', 'check'),
+  (445678901234, 'CGJ001P003D020', 10000, DATE '2023-03-15', 'CGJ001P003', 'CGJ001', 'cash'),
+  (556789012345, 'CGJ001P004D021', 7500, DATE '2022-04-20', 'CGJ001P004', 'CGJ001', 'check'),
+  (667890123456, 'CGJ001P005D022', 3000, DATE '2022-05-25', 'CGJ001P005', 'CGJ001', 'cash'),
+  (778901234567, 'CGJ002P001D023', 5000, DATE '2022-06-30', 'CGJ002P001', 'CGJ002', 'check'),
+  (889012345678, 'CGJ002P002D024', 10000, DATE '2022-07-05', 'CGJ002P002', 'CGJ002', 'cash'),
+  (990123456789, 'CGJ002P003D025', 5000, DATE '2022-08-10', 'CGJ002P003', 'CGJ002', 'check'),
+  (111111111188, 'CGJ002P004D026', 2500, DATE '2022-09-15', 'CGJ002P004', 'CGJ002', 'cash'),
+  (222222222212, 'CGJ002P005D027', 10000, DATE '2022-10-20', 'CGJ002P005', 'CGJ002', 'check'),
+  (223456789012, 'CGJ003P001D028', 5000, DATE '2022-11-25', 'CGJ003P001', 'CGJ003', 'cash'),
+  (334567890123, 'CGJ003P002D029', 7500, DATE '2022-12-30', 'CGJ003P002', 'CGJ003', 'check'),
+  (445678901234, 'CGJ003P003D030', 10000, DATE '2023-01-05', 'CGJ003P003', 'CGJ003', 'cash'),
+  (556789012345, 'CGJ003P004D031', 5000, DATE '2023-02-10', 'CGJ003P004', 'CGJ003', 'check'),
+  (667890123456, 'CGJ003P005D032', 2500, DATE '2023-03-15', 'CGJ003P005', 'CGJ003', 'cash'),
+  (778901234567, 'CMH001P001D033', 10000, DATE '2023-04-20', 'CMH001P001', 'CMH001', 'check');
+
+INSERT INTO Donation (aadharcard_no, donation_id, donation_amount, donation_date, project_id, charity_id, method)
+VALUES
+(333337890123, 'CMH001P001D034', 5000, DATE '2022-01-15', 'CMH001P001', 'CMH001', 'cash'),
+(333338901234, 'CMH001P001D035', 10000, DATE '2023-02-20', 'CMH002P003', 'CMH002', 'check'),
+(333339012345, 'CMH001P001D036', 7500, DATE '2022-03-18', 'CMH001P004', 'CMH001', 'cash'),
+(333330123456, 'CMH001P001D037', 12000, DATE '2022-04-22', 'CMH002P001', 'CMH002', 'check'),
+(333331234567, 'CMH001P001D038', 6000, DATE '2022-05-29', 'CMH001P002', 'CMH001', 'cash'),
+(333332345678, 'CMH001P001D039', 9000, DATE '2022-06-14', 'CMH002P005', 'CMH002', 'check'),
+(333333456789, 'CMH001P001D040', 8000, DATE '2022-07-27', 'CMH003P001', 'CMH003', 'cash'),
+(333335678901, 'CMH001P001D041', 15000, DATE '2022-08-30', 'CMH003P002', 'CMH003', 'check'),
+(333336789012, ' CMH001P001D042', 1000, DATE '2022-09-11', 'CMH003P005', 'CMH003', 'cash'),
+(333337800123, ' CMH001P001D043', 500, DATE '2022-10-25', 'CMH001P005', 'CMH001', 'check');
+
+INSERT INTO Donation (aadharcard_no, donation_id, donation_amount, donation_date, project_id, charity_id, method) VALUES
+    (445678904444, 'CDL003P001D044', 5000, DATE '2022-01-15', 'CWB001P001', 'CWB001', 'cash'),
+    (556789014444, 'CDL003P002D045', 10000, DATE '2023-02-25', 'CWB001P002', 'CWB001', 'check'),
+    (667890124444, 'CDL003P003D046', 15000, DATE '2022-03-10', 'CWB001P003', 'CWB001', 'cash'),
+    (778901234444, 'CDL003P004D047', 20000, DATE '2022-04-05', 'CWB001P004', 'CWB001', 'check'),
+    (889012344444, 'CDL003P005D048', 25000, DATE '2022-05-20', 'CWB001P005', 'CWB001', 'cash'),
+    (990123454444, 'CDL003P006D049', 30000, DATE '2022-06-30', 'CWB002P001', 'CWB002', 'check'),
+    (112345674444, 'CDL003P007D050', 35000, DATE '2023-01-15', 'CWB002P002', 'CWB002', 'cash'),
+    (223456784444, 'CDL003P008D051', 40000, DATE '2022-08-20', 'CWB002P003', 'CWB002', 'check'),
+    (334567894444, 'CDL003P009D052', 45000, DATE '2022-09-10', 'CWB002P004', 'CWB002', 'cash'),
+    (445678444444, 'CDL003P010D053', 50000, DATE '2022-10-05', 'CWB002P005', 'CWB002', 'check');
+
+
+INSERT INTO Donation (aadharcard_no, donation_id, donation_amount, donation_date, project_id, charity_id, method) VALUES
+(88292012001, 'CDL003P001D054', 5000, DATE '2022-01-15', 'CRA001P001', 'CRA001', 'cash'),
+(882920120002, 'CDL003P001D055', 3000, DATE '2022-02-18', 'CRA001P002', 'CRA001', 'check'),
+(882920345003, 'CDL003P001D056', 2000, DATE '2022-03-22', 'CRA001P003', 'CRA001', 'cash'),
+(882920456004, 'CDL003P001D057', 10000, DATE '2022-04-10', 'CRA001P004', 'CRA001', 'check'),
+(882920567005, 'CDL003P001D058', 1500, DATE '2022-05-20', 'CRA001P005', 'CRA001', 'cash'),
+(882920890006, 'CDL003P001D059', 8000, DATE '2022-06-27', 'CRA002P001', 'CRA002', 'check'),
+(99292880007, 'CDL003P001D060', 6000, DATE '2022-07-12', 'CRA002P002', 'CRA002', 'cash'),
+(882920901008, 'CDL003P001D061', 9000, DATE '2022-08-08', 'CRA002P003', 'CRA002', 'check'),
+(882920012009, 'CDL003P001D062', 4000, DATE '2022-09-03', 'CRA002P004', 'CRA002', 'cash'),
+(88292023010, 'CDL003P001D063', 12000, DATE '2022-10-29', 'CRA002P005', 'CRA002', 'check'),
+(88292034011, 'CDL003P001D064', 2500, DATE '2022-11-05', 'CRA003P001', 'CRA003', 'cash'),
+(882920345012, 'CDL003P001D065', 3500, DATE '2022-12-17', 'CRA003P002', 'CRA003', 'check'),
+(882920456013, 'CDL003P001D066', 5000, DATE '2023-01-02', 'CRA003P003', 'CRA003', 'cash'),
+(882920567014, 'CDL003P001D067', 7000, DATE '2023-02-09', 'CRA003P004', 'CRA003', 'check'),
+(882920789015, 'CDL003P001D068', 9000, DATE '2023-03-14', 'CRA003P005', 'CRA003', 'cash');
+
+
+--Works_on
+
+
+INSERT INTO Works_on (project_id, charity_id, employee_id)
+VALUES
+('CGJ001P001', 'CGJ001', 'CGJ001E006'),
+('CGJ001P001', 'CGJ001', 'CGJ001E007'),
+('CGJ001P002', 'CGJ001', 'CGJ001E008'),
+('CGJ001P002', 'CGJ001', 'CGJ001E009'),
+('CGJ001P003', 'CGJ001', 'CGJ001E010'),
+('CGJ002P001', 'CGJ002', 'CGJ002E006'),
+('CGJ002P002', 'CGJ002', 'CGJ002E007'),
+('CGJ002P003', 'CGJ002', 'CGJ002E008'),
+('CGJ002P004', 'CGJ002', 'CGJ002E009'),
+('CGJ002P005', 'CGJ002', 'CGJ002E010'),
+('CGJ003P001', 'CGJ003', 'CGJ003E006'),
+('CGJ003P002', 'CGJ003', 'CGJ003E007'),
+('CGJ003P003', 'CGJ003', 'CGJ003E008'),
+('CGJ003P004', 'CGJ003', 'CGJ003E009'),
+('CGJ003P005', 'CGJ003', 'CGJ003E010');
+
+
+INSERT INTO Works_on (project_id, charity_id, employee_id) VALUES
+('CMH001P001', 'CMH001', 'MH001E06'),
+('CMH001P001', 'CMH001', 'MH001E07'),
+('CMH001P002', 'CMH001', 'MH001E08'),
+('CMH001P002', 'CMH001', 'MH001E09'),
+('CMH001P003', 'CMH001', 'MH001E10'),
+('CMH001P003', 'CMH001', 'MH001E06'),
+('CMH001P004', 'CMH001', 'MH001E07'),
+('CMH001P004', 'CMH001', 'MH001E08'),
+('CMH001P005', 'CMH001', 'MH001E09'),
+('CMH001P005', 'CMH001', 'MH001E10'),
+('CMH002P001', 'CMH002', 'MH002E06'),
+('CMH002P001', 'CMH002', 'MH002E07'),
+('CMH002P002', 'CMH002', 'MH002E08'),
+('CMH002P002', 'CMH002', 'MH002E09'),
+('CMH002P003', 'CMH002', 'MH002E10'),
+('CMH002P003', 'CMH002', 'MH002E06'),
+('CMH002P004', 'CMH002', 'MH002E07'),
+('CMH002P004', 'CMH002', 'MH002E08'),
+('CMH002P005', 'CMH002', 'MH002E09'),
+('CMH002P005', 'CMH002', 'MH002E10'),
+('CMH003P001', 'CMH003', 'MH003E06'),
+('CMH003P001', 'CMH003', 'MH003E07'),
+('CMH003P002', 'CMH003', 'MH003E08'),
+('CMH003P002', 'CMH003', 'MH003E09'),
+('CMH003P003', 'CMH003', 'MH003E10'),
+('CMH003P003', 'CMH003', 'MH003E06'),
+('CMH003P004', 'CMH003', 'MH003E07'),
+('CMH003P004', 'CMH003', 'MH003E08'),
+('CMH003P005', 'CMH003', 'MH003E09'),
+('CMH003P005', 'CMH003', 'MH003E10');
+
+
+INSERT INTO Works_on (project_id, charity_id, employee_id)
+VALUES
+('CDL001P001', 'CDL001', 'DL001E06'),
+('CDL001P001', 'CDL001', 'DL001E07'),
+('CDL001P002', 'CDL001', 'DL001E07'),
+('CDL001P003', 'CDL001', 'DL001E08'),
+('CDL001P003', 'CDL001', 'DL001E09'),
+('CDL001P004', 'CDL001', 'DL001E10'),
+('CDL001P005', 'CDL001', 'DL001E06'),
+('CDL002P001', 'CDL002', 'HFC00206'),
+('CDL002P002', 'CDL002', 'HFC00207'),
+('CDL002P002', 'CDL002', 'HFC00208'),
+('CDL002P003', 'CDL002', 'HFC00208'),
+('CDL002P004', 'CDL002', 'HFC00209'),
+('CDL002P005', 'CDL002', 'HFC00210'),
+('CDL003P001', 'CDL003', 'SSC00306'),
+('CDL003P001', 'CDL003', 'SSC00307'),
+('CDL003P002', 'CDL003', 'SSC00307'),
+('CDL003P003', 'CDL003', 'SSC00308'),
+('CDL003P003', 'CDL003', 'SSC00309'),
+('CDL003P004', 'CDL003', 'SSC00310'),
+('CDL003P005', 'CDL003', 'SSC00306');
+
+
+INSERT INTO Works_on (project_id, charity_id, employee_id)
+VALUES
+('CWB001P001', 'CWB001', 'SSCWB00106'),
+('CWB001P001', 'CWB001', 'SSCWB00107'),
+('CWB001P002', 'CWB001', 'SSCWB00108'),
+('CWB001P002', 'CWB001', 'SSCWB00109'),
+('CWB001P002', 'CWB001', 'SSCWB00110'),
+('CWB001P003', 'CWB001', 'SSCWB00106'),
+('CWB001P003', 'CWB001', 'SSCWB00107'),
+('CWB001P003', 'CWB001', 'SSCWB00109'),
+('CWB001P004', 'CWB001', 'SSCWB00107'),
+('CWB001P004', 'CWB001', 'SSCWB00110'),
+('CWB001P005', 'CWB001', 'SSCWB00108'),
+('CWB001P005', 'CWB001', 'SSCWB00110'),
+('CWB002P001', 'CWB002', 'PR006'),
+('CWB002P001', 'CWB002', 'PR007'),
+('CWB002P002', 'CWB002', 'PR008'),
+('CWB002P002', 'CWB002', 'PR009'),
+('CWB002P002', 'CWB002', 'PR010'),
+('CWB002P003', 'CWB002', 'PR006'),
+('CWB002P003', 'CWB002', 'PR008'),
+('CWB002P003', 'CWB002', 'PR009'),
+('CWB002P004', 'CWB002', 'PR006'),
+('CWB002P004', 'CWB002', 'PR007'),
+('CWB002P004', 'CWB002', 'PR010'),
+('CWB002P005', 'CWB002', 'PR006'),
+('CWB002P005', 'CWB002', 'PR009'),
+('CWB003P001', 'CWB003', 'SP006'),
+('CWB003P001', 'CWB003', 'SP007'),
+('CWB003P002', 'CWB003', 'SP008'),
+('CWB003P002', 'CWB003', 'SP009'),
+('CWB003P002', 'CWB003', 'SP010'),
+('CWB003P003', 'CWB003', 'SP006'),
+('CWB003P003', 'CWB003', 'SP009'),
+('CWB003P004', 'CWB003', 'SP007'),
+('CWB003P004', 'CWB003', 'SP008'),
+('CWB003P004', 'CWB003', 'SP010'),
+('CWB003P005', 'CWB003', 'SP006'),
+('CWB003P005', 'CWB003', 'SP010');
+
+
+INSERT INTO Works_on (project_id, charity_id, employee_id) VALUES
+('CRA001P001', 'CRA001', 'AS006'),
+('CRA001P001', 'CRA001', 'AS007'),
+('CRA001P002', 'CRA001', 'AS008'),
+('CRA001P002', 'CRA001', 'AS009'),
+('CRA001P003', 'CRA001', 'AS010'),
+('CRA001P003', 'CRA001', 'AS006'),
+('CRA001P004', 'CRA001', 'AS007'),
+('CRA001P004', 'CRA001', 'AS008'),
+('CRA001P005', 'CRA001', 'AS009'),
+('CRA001P005', 'CRA001', 'AS010'),
+('CRA002P001', 'CRA002', 'UD006'),
+('CRA002P001', 'CRA002', 'UD007'),
+('CRA002P002', 'CRA002', 'UD008'),
+('CRA002P002', 'CRA002', 'UD009'),
+('CRA002P003', 'CRA002', 'UD010'),
+('CRA002P003', 'CRA002', 'UD006'),
+('CRA002P004', 'CRA002', 'UD007'),
+('CRA002P004', 'CRA002', 'UD008'),
+('CRA002P005', 'CRA002', 'UD009'),
+('CRA002P005', 'CRA002', 'UD010'),
+('CRA003P001', 'CRA003', 'CRA003E006'),
+('CRA003P001', 'CRA003', 'CRA003E007'),
+('CRA003P002', 'CRA003', 'CRA003E008'),
+('CRA003P002', 'CRA003', 'CRA003E009'),
+('CRA003P003', 'CRA003', 'CRA003E010'),
+('CRA003P003', 'CRA003', 'CRA003E006'),
+('CRA003P004', 'CRA003', 'CRA003E007'),
+('CRA003P004', 'CRA003', 'CRA003E008'),
+('CRA003P005', 'CRA003', 'CRA003E009'),
+('CRA003P005', 'CRA003', 'CRA003E010');
+
+
+--Donor_Contact
+INSERT INTO Donor_contact (aadharcard_no, Mobile_No)
+VALUES
+    (123456789012, 9876543210),
+    (234567890123, 9876543211),
+    (345678901234, 9876543212),
+    (456789012345, 9876543213),
+    (567890123456, 9876543214),
+    (678901234567, 9876543215),
+    (789012345678, 9876543216),
+    (890123456789, 9876543217),
+    (901234567890, 9876543218),
+    (112345678901, 9876543219),
+    (223456789012, 9876543220),
+    (334567890123, 9876543221),
+    (445678901234, 9876543222),
+    (556789012345, 9876543223),
+    (667890123456, 9876543224),
+    (778901234567, 9876543225),
+    (889012345678, 9876543226),
+    (990123456789, 9876543227),
+    (111111111188, 9876543228),
+    (222222222212, 9876543229),
+    (333337890123, 9876543230),
+    (333338901234, 9876543231),
+    (333339012345, 9876543232),
+    (333330123456, 9876543233),
+    (333331234567, 9876543234),
+    (333332345678, 9876543235),
+    (333333456789, 9876543236),
+    (333335678901, 9876543237),
+    (333336789012, 9876543238),
+    (333337800123, 9876543239),
+    (445678904444, 9876543240),
+    (556789014444, 9876543241),
+    (667890124444, 9876543242),
+    (778901234444, 9876543243),
+    (889012344444, 9876543244),
+    (990123454444, 9876543245),
+    (112345674444, 9876543246),
+    (223456784444, 9876543247),
+    (334567894444, 9876543248),
+    (445678444444, 9876543249),
+    (88292012001, 9876543250),
+    (882920120002, 9876543251),
+    (882920345003, 9876543252),
+    (882920456004, 9876543253),
+    (882920567005, 9876543254),
+    (882920890006, 9876543255),
+    (99292880007, 9876543256),
+    (882920901008, 9876543257),
+    (882920012009, 9876543258),
+    (88292023010, 9876543259),
+    (88292034011, 9876543260),
+    (882920345012, 9876543261),
+    (882920456013, 9876543262),
+    (882920567014, 9876543263),
+    (882920789015, 9876543264);
+
+
+
+--Donor_Email
+
+INSERT INTO Donor_email (aadharcard_no, email)
+VALUES
+(123456789012, 'rahul@gmail.com'),
+(234567890123, 'sneha@yahoo.com'),
+(345678901234, 'nikhil@hotmail.com'),
+(456789012345, 'komal@gmail.com'),
+(567890123456, 'vishal@yahoo.com'),
+(678901234567, 'preeti@hotmail.com'),
+(789012345678, 'mayank@gmail.com'),
+(890123456789, 'swati@yahoo.com'),
+(901234567890, 'ravi@hotmail.com'),
+(112345678901, 'amit@gmail.com'),
+(223456789012, 'shruti@yahoo.com'),
+(334567890123, 'ankit@hotmail.com'),
+(445678901234, 'parth@gmail.com'),
+(556789012345, 'kavya@yahoo.com'),
+(667890123456, 'yash@hotmail.com'),
+(778901234567, 'dhruv@gmail.com'),
+(889012345678, 'neha@yahoo.com'),
+(990123456789, 'riya@hotmail.com'),
+(111111111188, 'kunal@gmail.com'),
+(222222222212, 'aditya@yahoo.com'),
+(333337890123, 'saurabh@hotmail.com'),
+(333338901234, 'prachi@gmail.com'),
+(333339012345, 'arjun@yahoo.com'),
+(333330123456, 'amit@hotmail.com'),
+(333331234567, 'raj@gmail.com'),
+(333332345678, 'suman@yahoo.com'),
+(333333456789, 'kapil@hotmail.com'),
+(333335678901, 'varun@gmail.com'),
+(333336789012, 'aryan@yahoo.com'),
+(333337800123, 'manisha@hotmail.com'),
+(445678904444, 'priyanka@gmail.com'),
+(556789014444, 'abhishek@yahoo.com'),
+(667890124444, 'shivani@hotmail.com'),
+(778901234444, 'aakash@gmail.com'),
+(889012344444, 'ankita@yahoo.com'),
+(990123454444, 'rahul@hotmail.com'),
+(112345674444, 'pooja@gmail.com'),
+(223456784444, 'aditi@yahoo.com'),
+(334567894444, 'anjali@hotmail.com'),
+(445678444444, 'harsh@gmail.com'),
+(88292012001, 'aniljoshi@gmail.com'),
+(882920120002, 'shreyaparekh@yahoo.com'),
+(882920345003, 'vivekgupta@hotmail.com'),
+(882920456004, 'nehaverma@gmail.com'),
+(882920567005, 'rohitsingh@yahoo.com'),
+(882920890006, 'arunpatel@hotmail.com'),
+(99292880007, 'poojasharma@gmail.com'),
+(882920901008, 'ankitgupta@yahoo.com'),
+(882920012009, 'sanjaysingh@hotmail.com'),
+(88292023010, 'riyamehta@gmail.com'),
+(88292034011, 'amitajoshi@yahoo.com'),
+(882920345012, 'rahulparekh@hotmail.com'),
+(882920456013, 'sachingupta@gmail.com'),
+(882920567014, 'nidhiverma@yahoo.com'),
+(882920789015, 'saurabhsingh@hotmail.com');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
